@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "headline": "Meet Joe",
+    "accent": "Joe",
+    "subtitle": "The Man Behind the Fence",
+    "description": "Born and raised in the Cape Fear region, Joe founded Flytrap Fence Company with a simple mission: build fences the right way, treat people fairly, and stand behind every post we set.",
+    "badge": "Founder & Lead Installer",
+    "video": "/images/joe-video.mp4"
+  },
+  "story": {
+    "title": "The Flytrap Story",
+    "image": "/images/joe.avif",
+    "paragraphs": [
+      "Joe grew up working with his hands in Wilmington, NC. After years of working for other contractors and seeing too many corners cut, he decided to do things differently. In 2019, Flytrap Fence Company was born.",
+      "The name \"Flytrap\" comes from the Venus flytrap, a plant native to the Wilmington area and found nowhere else in the world. Just like that plant, we're proudly local, deeply rooted in this community, and built to thrive in the Carolina climate.",
+      "What started as a one-man operation has grown into a trusted team, but Joe is still on the job site for every install. He believes the owner should know exactly what's going into your fence—because that's the only way to guarantee quality."
+    ],
+    "highlight": "When Joe's not setting posts, you'll find him fishing in the Cape Fear River, coaching little league, or spending time with his family. He's not just building fences—he's building a business his kids can be proud of."
+  },
+  "values": {
+    "title": "What We Stand For",
+    "items": [
+      {
+        "title": "Honest Work",
+        "description": "No hidden fees, no bait-and-switch. The price we quote is the price you pay. Period.",
+        "icon": "handshake"
+      },
+      {
+        "title": "Quality Materials",
+        "description": "We use premium lumber and hardware because a fence should last for decades, not just years.",
+        "icon": "hammer"
+      },
+      {
+        "title": "5-Year Warranty",
+        "description": "We stand behind our work. If something's not right, we'll make it right. Simple as that.",
+        "icon": "shield-check"
+      }
+    ]
+  },
+  "cta": {
+    "headline": "Ready to Get Started?",
+    "description": "Let's talk about your project. Joe personally reviews every quote request.",
+    "buttonText": "Get Your Free Quote"
+  }
+}

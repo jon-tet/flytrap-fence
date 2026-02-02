@@ -399,18 +399,18 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Meet <span class="accent">Joe</span><br>The Man Behind the Fence</h1>
-                <p class="lead">
+                <h1 id="hero-headline">Meet <span class="accent">Joe</span><br>The Man Behind the Fence</h1>
+                <p class="lead" id="hero-description">
                     Born and raised in the Cape Fear region, Joe founded Flytrap Fence Company with a simple mission: build fences the right way, treat people fairly, and stand behind every post we set.
                 </p>
             </div>
             <div class="hero-video">
-                <video autoplay muted loop playsinline>
+                <video id="hero-video" autoplay muted loop playsinline>
                     <source src="/images/joe-video.mp4" type="video/mp4">
                 </video>
                 <div class="hero-badge">
                     <i data-lucide="award"></i>
-                    Founder & Lead Installer
+                    <span id="hero-badge">Founder & Lead Installer</span>
                 </div>
             </div>
         </div>
@@ -420,21 +420,17 @@
     <section class="story">
         <div class="story-container">
             <div class="story-image">
-                <img src="/images/joe.avif" alt="Joe - Founder of Flytrap Fence Company">
+                <img id="story-image" src="/images/joe.avif" alt="Joe - Founder of Flytrap Fence Company">
             </div>
             <div class="story-content">
-                <h2>The Flytrap Story</h2>
-                <p>
-                    Joe grew up working with his hands in Wilmington, NC. After years of working for other contractors and seeing too many corners cut, he decided to do things differently. In 2019, Flytrap Fence Company was born.
-                </p>
-                <p>
-                    The name "Flytrap" comes from the Venus flytrap, a plant native to the Wilmington area and found nowhere else in the world. Just like that plant, we're proudly local, deeply rooted in this community, and built to thrive in the Carolina climate.
-                </p>
-                <p>
-                    What started as a one-man operation has grown into a trusted team, but Joe is still on the job site for every install. He believes the owner should know exactly what's going into your fence—because that's the only way to guarantee quality.
-                </p>
+                <h2 id="story-title">The Flytrap Story</h2>
+                <div id="story-paragraphs">
+                    <p>Joe grew up working with his hands in Wilmington, NC. After years of working for other contractors and seeing too many corners cut, he decided to do things differently. In 2019, Flytrap Fence Company was born.</p>
+                    <p>The name "Flytrap" comes from the Venus flytrap, a plant native to the Wilmington area and found nowhere else in the world. Just like that plant, we're proudly local, deeply rooted in this community, and built to thrive in the Carolina climate.</p>
+                    <p>What started as a one-man operation has grown into a trusted team, but Joe is still on the job site for every install. He believes the owner should know exactly what's going into your fence—because that's the only way to guarantee quality.</p>
+                </div>
                 <div class="story-highlight">
-                    <p>"When Joe's not setting posts, you'll find him fishing in the Cape Fear River, coaching little league, or spending time with his family. He's not just building fences—he's building a business his kids can be proud of."</p>
+                    <p id="story-highlight">"When Joe's not setting posts, you'll find him fishing in the Cape Fear River, coaching little league, or spending time with his family. He's not just building fences—he's building a business his kids can be proud of."</p>
                 </div>
             </div>
         </div>
@@ -443,8 +439,8 @@
     <!-- Values -->
     <section class="values">
         <div class="values-container">
-            <h2>What We Stand For</h2>
-            <div class="values-grid">
+            <h2 id="values-title">What We Stand For</h2>
+            <div class="values-grid" id="values-grid">
                 <div class="value-card">
                     <div class="value-icon"><i data-lucide="handshake"></i></div>
                     <h3>Honest Work</h3>
@@ -467,10 +463,10 @@
     <!-- CTA -->
     <section class="cta">
         <div class="cta-container">
-            <h2>Ready to Get Started?</h2>
-            <p>Let's talk about your project. Joe personally reviews every quote request.</p>
+            <h2 id="cta-headline">Ready to Get Started?</h2>
+            <p id="cta-description">Let's talk about your project. Joe personally reviews every quote request.</p>
             <a href="/#contact" class="btn btn-primary">
-                Get Your Free Quote
+                <span id="cta-button">Get Your Free Quote</span>
                 <i data-lucide="arrow-right"></i>
             </a>
         </div>
@@ -482,7 +478,67 @@
     </footer>
 
     <script>
-        lucide.createIcons();
+        // Load content from CMS
+        fetch('/content/about.json')
+            .then(res => res.json())
+            .then(data => {
+                // Hero
+                if (data.hero) {
+                    const h = data.hero;
+                    document.getElementById('hero-headline').innerHTML =
+                        `Meet <span class="accent">${h.accent}</span><br>${h.subtitle}`;
+                    document.getElementById('hero-description').textContent = h.description;
+                    document.getElementById('hero-badge').textContent = h.badge;
+                    if (h.video) {
+                        document.getElementById('hero-video').querySelector('source').src = h.video;
+                        document.getElementById('hero-video').load();
+                    }
+                }
+
+                // Story
+                if (data.story) {
+                    const s = data.story;
+                    document.getElementById('story-title').textContent = s.title;
+                    if (s.image) document.getElementById('story-image').src = s.image;
+                    if (s.paragraphs) {
+                        document.getElementById('story-paragraphs').innerHTML =
+                            s.paragraphs.map(p => `<p>${p}</p>`).join('');
+                    }
+                    if (s.highlight) {
+                        document.getElementById('story-highlight').textContent = `"${s.highlight}"`;
+                    }
+                }
+
+                // Values
+                if (data.values) {
+                    const v = data.values;
+                    document.getElementById('values-title').textContent = v.title;
+                    if (v.items) {
+                        document.getElementById('values-grid').innerHTML = v.items.map(item => `
+                            <div class="value-card">
+                                <div class="value-icon"><i data-lucide="${item.icon}"></i></div>
+                                <h3>${item.title}</h3>
+                                <p>${item.description}</p>
+                            </div>
+                        `).join('');
+                    }
+                }
+
+                // CTA
+                if (data.cta) {
+                    const c = data.cta;
+                    document.getElementById('cta-headline').textContent = c.headline;
+                    document.getElementById('cta-description').textContent = c.description;
+                    document.getElementById('cta-button').textContent = c.buttonText;
+                }
+
+                // Re-initialize icons after dynamic content
+                lucide.createIcons();
+            })
+            .catch(err => {
+                console.log('Using default content');
+                lucide.createIcons();
+            });
     </script>
 </body>
 </html>
