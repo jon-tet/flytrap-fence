@@ -113,3 +113,52 @@ collections:
           - { label: "Instagram URL", name: "instagram", widget: "string" }
           - { label: "Google Review URL", name: "googleReview", widget: "string" }
           - { label: "Logo", name: "logo", widget: "image" }
+
+      # About Page
+      - name: "about"
+        label: "About Page"
+        file: "content/about.json"
+        fields:
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string", default: "Meet Joe" }
+              - { label: "Headline Accent", name: "accent", widget: "string", default: "Joe" }
+              - { label: "Subtitle", name: "subtitle", widget: "string", default: "The Man Behind the Fence" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Badge Text", name: "badge", widget: "string", default: "Founder & Lead Installer" }
+              - { label: "Hero Video", name: "video", widget: "file" }
+
+          - label: "Story Section"
+            name: "story"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string", default: "The Flytrap Story" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - label: "Paragraphs"
+                name: "paragraphs"
+                widget: "list"
+                field: { label: "Paragraph", name: "text", widget: "text" }
+              - { label: "Highlight Quote", name: "highlight", widget: "text" }
+
+          - label: "Values"
+            name: "values"
+            widget: "object"
+            fields:
+              - { label: "Section Title", name: "title", widget: "string", default: "What We Stand For" }
+              - label: "Value Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Icon", name: "icon", widget: "string", hint: "Icon name from Lucide (e.g., handshake, hammer)" }
+
+          - label: "Call to Action"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string", default: "Ready to Get Started?" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Button Text", name: "buttonText", widget: "string", default: "Get Your Free Quote" }
