@@ -57,75 +57,12 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* NAV */
-        .nav {
-            position: fixed;
-            top: 0; left: 0; right: 0;
-            z-index: 1000;
-            padding: 1rem 2rem;
-            background: rgba(253, 252, 250, 0.95);
-            backdrop-filter: blur(20px);
-            box-shadow: 0 4px 30px rgba(26, 51, 41, 0.08);
-        }
-        .nav-container {
-            max-width: 1280px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo { display: flex; align-items: center; text-decoration: none; }
-        .logo-img { height: 44px; width: auto; }
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            list-style: none;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: var(--text-dark);
-            font-family: var(--font-heading);
-            font-weight: 600;
-            font-size: 1rem;
-            padding: 0.5rem 0;
-            transition: color 0.2s ease;
-            text-transform: uppercase;
-        }
-        .nav-links a:hover { color: var(--green-600); }
-        .nav-links a.active { color: var(--green-600); }
-        .nav-cta {
-            background: var(--green-700);
-            color: white !important;
-            padding: 0.75rem 1.5rem !important;
-            border-radius: var(--radius-sm);
-            font-weight: 700 !important;
-            transition: background 0.2s ease !important;
-        }
-        .nav-cta:hover { background: var(--green-800); color: white; }
-        .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0.5rem;
-            flex-direction: column;
-            gap: 5px;
-        }
-        .mobile-menu-btn span {
-            display: block;
-            width: 26px;
-            height: 2px;
-            background: var(--green-700);
-            border-radius: 2px;
-        }
-
-        /* HERO */
-        .hero {
+        /* ABOUT PAGE HERO */
+        .about-hero {
             padding: 8rem 2rem 5rem;
             background: linear-gradient(180deg, var(--cream-100) 0%, var(--green-50) 100%);
         }
-        .hero-container {
+        .about-hero-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -133,7 +70,7 @@
             gap: 4rem;
             align-items: center;
         }
-        .hero-content h1 {
+        .about-hero-content h1 {
             font-family: var(--font-heading);
             font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 700;
@@ -142,24 +79,24 @@
             text-transform: uppercase;
             line-height: 1.1;
         }
-        .hero-content h1 .accent { color: var(--green-600); }
-        .hero-content .lead {
+        .about-hero-content h1 .accent { color: var(--green-600); }
+        .about-hero-content .lead {
             font-size: 1.25rem;
             color: var(--text-medium);
             margin-bottom: 2rem;
             line-height: 1.7;
         }
-        .hero-video {
+        .about-hero-video {
             position: relative;
         }
-        .hero-video video {
+        .about-hero-video video {
             width: 100%;
             height: 500px;
             object-fit: cover;
             border-radius: var(--radius-sm);
             box-shadow: var(--shadow-lg);
         }
-        .hero-badge {
+        .about-hero-badge {
             position: absolute;
             bottom: -20px;
             left: 30px;
@@ -176,7 +113,7 @@
             gap: 0.5rem;
             box-shadow: var(--shadow-md);
         }
-        .hero-badge svg { width: 24px; height: 24px; }
+        .about-hero-badge svg { width: 24px; height: 24px; }
 
         /* STORY SECTION */
         .story {
@@ -334,28 +271,11 @@
         .btn-primary { background: var(--green-700); color: white; }
         .btn-primary:hover { background: var(--green-800); }
 
-        /* FOOTER */
-        .footer {
-            background: var(--green-900);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-        .footer p {
-            color: var(--green-300);
-            font-size: 0.9375rem;
-        }
-        .footer a {
-            color: var(--green-200);
-            text-decoration: none;
-        }
-        .footer a:hover { color: white; }
-
         /* RESPONSIVE */
         @media (max-width: 1024px) {
-            .hero-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
-            .hero-video video { height: 400px; }
-            .hero-badge { left: 50%; transform: translateX(-50%); }
+            .about-hero-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
+            .about-hero-video video { height: 400px; }
+            .about-hero-badge { left: 50%; transform: translateX(-50%); }
             .story-container { grid-template-columns: 1fr; gap: 3rem; }
             .story-image { order: -1; }
             .story-image img { height: 450px; }
@@ -365,50 +285,32 @@
             .values-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
         }
         @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .mobile-menu-btn { display: flex; }
-            .hero { padding: 6rem 1.5rem 4rem; }
-            .hero-content h1 { font-size: 2.25rem; }
-            .hero-video video { height: 320px; }
+            .about-hero { padding: 6rem 1.5rem 4rem; }
+            .about-hero-content h1 { font-size: 2.25rem; }
+            .about-hero-video video { height: 320px; }
             .story { padding: 4rem 1.5rem; }
             .story-image img { height: 350px; }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="nav-container">
-            <a href="/" class="logo">
-                <img src="https://static.wixstatic.com/media/59f101_063e0164581d4bd99618bbc958cc6cdb~mv2.png" alt="Flytrap Fence Company" class="logo-img">
-            </a>
-            <ul class="nav-links">
-                <li><a href="/#services">Services</a></li>
-                <li><a href="/#gallery">Our Work</a></li>
-                <li><a href="/#reviews">Reviews</a></li>
-                <li><a href="/about.html" class="active">About</a></li>
-                <li><a href="/#contact" class="nav-cta">Get a Free Quote</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
+    <!-- Nav and Mobile Nav injected by components.js -->
+    <div id="nav-placeholder"></div>
 
     <!-- Hero -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
+    <section class="about-hero">
+        <div class="about-hero-container">
+            <div class="about-hero-content">
                 <h1 id="hero-headline">Meet <span class="accent">Joe</span><br>The Man Behind the Fence</h1>
                 <p class="lead" id="hero-description">
                     Born and raised in the Cape Fear region, Joe founded Flytrap Fence Company with a simple mission: build fences the right way, treat people fairly, and stand behind every post we set.
                 </p>
             </div>
-            <div class="hero-video">
+            <div class="about-hero-video">
                 <video id="hero-video" autoplay muted loop playsinline>
                     <source src="/images/joe-video.mp4" type="video/mp4">
                 </video>
-                <div class="hero-badge">
+                <div class="about-hero-badge">
                     <i data-lucide="award"></i>
                     <span id="hero-badge">Founder & Lead Installer</span>
                 </div>
@@ -472,13 +374,14 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Flytrap Fence Company, LLC. All rights reserved. | <a href="/">Back to Home</a></p>
-    </footer>
+    <!-- Footer injected by components.js -->
+    <div id="footer-placeholder"></div>
 
+    <!-- Shared Components (Nav, Footer, Mobile Menu) -->
+    <script src="/js/components.js"></script>
+
+    <!-- CMS Content Loading -->
     <script>
-        // Load content from CMS
         fetch('/content/about.json')
             .then(res => res.json())
             .then(data => {
