@@ -20,26 +20,14 @@
             --green-800: #1a3328;
             --green-700: #234536;
             --green-600: #2d5744;
-            --green-500: #3a7058;
-            --green-400: #4a8a6d;
             --green-300: #6ba388;
             --green-200: #9fc4af;
             --green-100: #d4e5db;
             --green-50: #eef5f1;
-            --cream-900: #3d3830;
-            --cream-800: #5a5347;
-            --cream-700: #78705f;
-            --cream-600: #958c78;
-            --cream-500: #b3a893;
-            --cream-400: #ccc3b0;
-            --cream-300: #e0dacb;
-            --cream-200: #ece8dc;
             --cream-100: #f5f3ec;
             --cream-50: #faf9f6;
             --text-dark: #1a2318;
             --text-medium: #3d4a3a;
-            --text-light: #5c6b58;
-            --shadow-sm: 0 1px 3px rgba(15, 31, 23, 0.08);
             --shadow-md: 0 4px 16px rgba(15, 31, 23, 0.12);
             --shadow-lg: 0 12px 40px rgba(15, 31, 23, 0.16);
             --font-heading: 'Barlow Condensed', sans-serif;
@@ -54,15 +42,105 @@
             color: var(--text-dark);
             line-height: 1.6;
             background: var(--cream-50);
-            -webkit-font-smoothing: antialiased;
         }
 
-        /* ABOUT PAGE HERO */
-        .about-hero {
+        /* ========== NAVIGATION ========== */
+        .nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            z-index: 100;
+            padding: 1rem 2rem;
+            background: rgba(253, 252, 250, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+        .nav-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { text-decoration: none; }
+        .logo img { height: 44px; }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-family: var(--font-heading);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .nav-links a:hover { color: var(--green-600); }
+        .nav-links a.active { color: var(--green-600); }
+        .nav-cta {
+            background: var(--green-700) !important;
+            color: white !important;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+        .nav-cta:hover { background: var(--green-800) !important; }
+
+        /* Hamburger Button */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 5px;
+            z-index: 200;
+        }
+        .hamburger span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background: var(--green-700);
+            transition: 0.3s;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--cream-50);
+            z-index: 150;
+            padding: 100px 2rem 2rem;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .mobile-menu.open { display: flex; }
+        .mobile-menu a {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--green-800);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .mobile-menu a:hover { color: var(--green-600); }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+        }
+
+        /* ========== HERO ========== */
+        .hero {
             padding: 8rem 2rem 5rem;
             background: linear-gradient(180deg, var(--cream-100) 0%, var(--green-50) 100%);
         }
-        .about-hero-container {
+        .hero-container {
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
@@ -70,7 +148,7 @@
             gap: 4rem;
             align-items: center;
         }
-        .about-hero-content h1 {
+        .hero h1 {
             font-family: var(--font-heading);
             font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 700;
@@ -79,24 +157,21 @@
             text-transform: uppercase;
             line-height: 1.1;
         }
-        .about-hero-content h1 .accent { color: var(--green-600); }
-        .about-hero-content .lead {
+        .hero h1 .accent { color: var(--green-600); }
+        .hero .lead {
             font-size: 1.25rem;
             color: var(--text-medium);
-            margin-bottom: 2rem;
             line-height: 1.7;
         }
-        .about-hero-video {
-            position: relative;
-        }
-        .about-hero-video video {
+        .hero-video { position: relative; }
+        .hero-video video {
             width: 100%;
             height: 500px;
             object-fit: cover;
             border-radius: var(--radius-sm);
             box-shadow: var(--shadow-lg);
         }
-        .about-hero-badge {
+        .hero-badge {
             position: absolute;
             bottom: -20px;
             left: 30px;
@@ -106,16 +181,15 @@
             border-radius: var(--radius-sm);
             font-family: var(--font-heading);
             font-weight: 700;
-            font-size: 1.125rem;
             text-transform: uppercase;
             display: flex;
             align-items: center;
             gap: 0.5rem;
             box-shadow: var(--shadow-md);
         }
-        .about-hero-badge svg { width: 24px; height: 24px; }
+        .hero-badge svg { width: 24px; height: 24px; }
 
-        /* STORY SECTION */
+        /* ========== STORY ========== */
         .story {
             padding: 6rem 2rem;
             background: var(--cream-50);
@@ -128,9 +202,7 @@
             gap: 4rem;
             align-items: center;
         }
-        .story-image {
-            position: relative;
-        }
+        .story-image { position: relative; }
         .story-image img {
             width: 100%;
             height: 600px;
@@ -141,15 +213,12 @@
         .story-image::before {
             content: '';
             position: absolute;
-            top: -20px;
-            left: -20px;
-            right: 20px;
-            bottom: 20px;
+            top: -20px; left: -20px; right: 20px; bottom: 20px;
             border: 3px solid var(--green-300);
             border-radius: var(--radius-sm);
             z-index: -1;
         }
-        .story-content h2 {
+        .story h2 {
             font-family: var(--font-heading);
             font-size: clamp(2rem, 4vw, 2.75rem);
             font-weight: 700;
@@ -157,13 +226,12 @@
             margin-bottom: 2rem;
             text-transform: uppercase;
         }
-        .story-content p {
+        .story p {
             font-size: 1.125rem;
             color: var(--text-medium);
             line-height: 1.8;
             margin-bottom: 1.5rem;
         }
-        .story-content p:last-child { margin-bottom: 0; }
         .story-highlight {
             background: linear-gradient(135deg, var(--green-50) 0%, var(--cream-100) 100%);
             padding: 1.5rem;
@@ -172,21 +240,17 @@
             margin-top: 2rem;
         }
         .story-highlight p {
-            font-size: 1.0625rem;
             font-style: italic;
             color: var(--green-800);
             margin: 0;
         }
 
-        /* VALUES */
+        /* ========== VALUES ========== */
         .values {
             padding: 6rem 2rem;
             background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
         }
-        .values-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .values-container { max-width: 1200px; margin: 0 auto; }
         .values h2 {
             font-family: var(--font-heading);
             font-size: clamp(2rem, 4vw, 2.75rem);
@@ -201,13 +265,9 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 2rem;
         }
-        .value-card {
-            text-align: center;
-            padding: 2rem;
-        }
+        .value-card { text-align: center; padding: 2rem; }
         .value-icon {
-            width: 72px;
-            height: 72px;
+            width: 72px; height: 72px;
             margin: 0 auto 1.25rem;
             background: rgba(255,255,255,0.1);
             border-radius: var(--radius-sm);
@@ -224,22 +284,15 @@
             margin-bottom: 0.5rem;
             text-transform: uppercase;
         }
-        .value-card p {
-            font-size: 1rem;
-            color: var(--green-200);
-            line-height: 1.6;
-        }
+        .value-card p { color: var(--green-200); line-height: 1.6; }
 
-        /* CTA */
+        /* ========== CTA ========== */
         .cta {
             padding: 5rem 2rem;
             background: var(--cream-100);
             text-align: center;
         }
-        .cta-container {
-            max-width: 700px;
-            margin: 0 auto;
-        }
+        .cta-container { max-width: 700px; margin: 0 auto; }
         .cta h2 {
             font-family: var(--font-heading);
             font-size: clamp(1.75rem, 4vw, 2.5rem);
@@ -256,7 +309,6 @@
         .btn {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
             gap: 0.5rem;
             padding: 1rem 2rem;
             border-radius: var(--radius-sm);
@@ -264,55 +316,90 @@
             font-weight: 700;
             font-size: 1.125rem;
             text-decoration: none;
-            transition: all 0.2s ease;
             text-transform: uppercase;
+            background: var(--green-700);
+            color: white;
         }
+        .btn:hover { background: var(--green-800); }
         .btn svg { width: 20px; height: 20px; }
-        .btn-primary { background: var(--green-700); color: white; }
-        .btn-primary:hover { background: var(--green-800); }
 
-        /* RESPONSIVE */
+        /* ========== FOOTER ========== */
+        .footer {
+            background: var(--green-900);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .footer p { color: var(--green-300); }
+        .footer a { color: var(--green-200); text-decoration: none; }
+        .footer a:hover { color: white; }
+
+        /* ========== RESPONSIVE ========== */
         @media (max-width: 1024px) {
-            .about-hero-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
-            .about-hero-video video { height: 400px; }
-            .about-hero-badge { left: 50%; transform: translateX(-50%); }
+            .hero-container { grid-template-columns: 1fr; text-align: center; gap: 3rem; }
+            .hero-video video { height: 400px; }
+            .hero-badge { left: 50%; transform: translateX(-50%); }
             .story-container { grid-template-columns: 1fr; gap: 3rem; }
             .story-image { order: -1; }
             .story-image img { height: 450px; }
             .story-image::before { display: none; }
             .story-content { text-align: center; }
-            .story-highlight { text-align: left; }
             .values-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
         }
         @media (max-width: 768px) {
-            .about-hero { padding: 6rem 1.5rem 4rem; }
-            .about-hero-content h1 { font-size: 2.25rem; }
-            .about-hero-video video { height: 320px; }
+            .hero { padding: 6rem 1.5rem 4rem; }
+            .hero h1 { font-size: 2.25rem; }
+            .hero-video video { height: 320px; }
             .story { padding: 4rem 1.5rem; }
             .story-image img { height: 350px; }
         }
     </style>
 </head>
 <body>
-    <!-- Nav and Mobile Nav injected by components.js -->
-    <div id="nav-placeholder"></div>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="https://static.wixstatic.com/media/59f101_063e0164581d4bd99618bbc958cc6cdb~mv2.png" alt="Flytrap Fence">
+            </a>
+            <ul class="nav-links">
+                <li><a href="/#services">Services</a></li>
+                <li><a href="/#gallery">Our Work</a></li>
+                <li><a href="/#reviews">Reviews</a></li>
+                <li><a href="/about.html" class="active">About</a></li>
+                <li><a href="/#contact" class="nav-cta">Get a Free Quote</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="/#services">Services</a>
+        <a href="/#gallery">Our Work</a>
+        <a href="/#reviews">Reviews</a>
+        <a href="/about.html">About</a>
+        <a href="/#contact">Get a Free Quote</a>
+    </div>
 
     <!-- Hero -->
-    <section class="about-hero">
-        <div class="about-hero-container">
-            <div class="about-hero-content">
-                <h1 id="hero-headline">Meet <span class="accent">Joe</span><br>The Man Behind the Fence</h1>
-                <p class="lead" id="hero-description">
-                    Born and raised in the Cape Fear region, Joe founded Flytrap Fence Company with a simple mission: build fences the right way, treat people fairly, and stand behind every post we set.
-                </p>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Meet <span class="accent">Joe</span><br>The Man Behind the Fence</h1>
+                <p class="lead">Born and raised in the Cape Fear region, Joe founded Flytrap Fence Company with a simple mission: build fences the right way, treat people fairly, and stand behind every post we set.</p>
             </div>
-            <div class="about-hero-video">
-                <video id="hero-video" autoplay muted loop playsinline>
+            <div class="hero-video">
+                <video autoplay muted loop playsinline>
                     <source src="/images/joe-video.mp4" type="video/mp4">
                 </video>
-                <div class="about-hero-badge">
+                <div class="hero-badge">
                     <i data-lucide="award"></i>
-                    <span id="hero-badge">Founder & Lead Installer</span>
+                    Founder & Lead Installer
                 </div>
             </div>
         </div>
@@ -322,17 +409,15 @@
     <section class="story">
         <div class="story-container">
             <div class="story-image">
-                <img id="story-image" src="/images/joe.avif" alt="Joe - Founder of Flytrap Fence Company">
+                <img src="/images/joe.avif" alt="Joe - Founder of Flytrap Fence Company">
             </div>
             <div class="story-content">
-                <h2 id="story-title">The Flytrap Story</h2>
-                <div id="story-paragraphs">
-                    <p>Joe grew up working with his hands in Wilmington, NC. After years of working for other contractors and seeing too many corners cut, he decided to do things differently. In 2019, Flytrap Fence Company was born.</p>
-                    <p>The name "Flytrap" comes from the Venus flytrap, a plant native to the Wilmington area and found nowhere else in the world. Just like that plant, we're proudly local, deeply rooted in this community, and built to thrive in the Carolina climate.</p>
-                    <p>What started as a one-man operation has grown into a trusted team, but Joe is still on the job site for every install. He believes the owner should know exactly what's going into your fence—because that's the only way to guarantee quality.</p>
-                </div>
+                <h2>The Flytrap Story</h2>
+                <p>Joe grew up working with his hands in Wilmington, NC. After years of working for other contractors and seeing too many corners cut, he decided to do things differently. In 2019, Flytrap Fence Company was born.</p>
+                <p>The name "Flytrap" comes from the Venus flytrap, a plant native to the Wilmington area and found nowhere else in the world. Just like that plant, we're proudly local, deeply rooted in this community, and built to thrive in the Carolina climate.</p>
+                <p>What started as a one-man operation has grown into a trusted team, but Joe is still on the job site for every install. He believes the owner should know exactly what's going into your fence—because that's the only way to guarantee quality.</p>
                 <div class="story-highlight">
-                    <p id="story-highlight">"When Joe's not setting posts, you'll find him fishing in the Cape Fear River, coaching little league, or spending time with his family. He's not just building fences—he's building a business his kids can be proud of."</p>
+                    <p>"When Joe's not setting posts, you'll find him fishing in the Cape Fear River, coaching little league, or spending time with his family. He's not just building fences—he's building a business his kids can be proud of."</p>
                 </div>
             </div>
         </div>
@@ -341,8 +426,8 @@
     <!-- Values -->
     <section class="values">
         <div class="values-container">
-            <h2 id="values-title">What We Stand For</h2>
-            <div class="values-grid" id="values-grid">
+            <h2>What We Stand For</h2>
+            <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon"><i data-lucide="handshake"></i></div>
                     <h3>Honest Work</h3>
@@ -365,83 +450,42 @@
     <!-- CTA -->
     <section class="cta">
         <div class="cta-container">
-            <h2 id="cta-headline">Ready to Get Started?</h2>
-            <p id="cta-description">Let's talk about your project. Joe personally reviews every quote request.</p>
-            <a href="/#contact" class="btn btn-primary">
-                <span id="cta-button">Get Your Free Quote</span>
+            <h2>Ready to Get Started?</h2>
+            <p>Let's talk about your project. Joe personally reviews every quote request.</p>
+            <a href="/#contact" class="btn">
+                Get Your Free Quote
                 <i data-lucide="arrow-right"></i>
             </a>
         </div>
     </section>
 
-    <!-- Footer injected by components.js -->
-    <div id="footer-placeholder"></div>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Flytrap Fence Company, LLC. All rights reserved. | <a href="/">Back to Home</a></p>
+    </footer>
 
-    <!-- Shared Components (Nav, Footer, Mobile Menu) -->
-    <script src="/js/components.js"></script>
-
-    <!-- CMS Content Loading -->
     <script>
-        fetch('/content/about.json')
-            .then(res => res.json())
-            .then(data => {
-                // Hero
-                if (data.hero) {
-                    const h = data.hero;
-                    document.getElementById('hero-headline').innerHTML =
-                        `Meet <span class="accent">${h.accent}</span><br>${h.subtitle}`;
-                    document.getElementById('hero-description').textContent = h.description;
-                    document.getElementById('hero-badge').textContent = h.badge;
-                    if (h.video) {
-                        document.getElementById('hero-video').querySelector('source').src = h.video;
-                        document.getElementById('hero-video').load();
-                    }
-                }
+        // Initialize icons
+        lucide.createIcons();
 
-                // Story
-                if (data.story) {
-                    const s = data.story;
-                    document.getElementById('story-title').textContent = s.title;
-                    if (s.image) document.getElementById('story-image').src = s.image;
-                    if (s.paragraphs) {
-                        document.getElementById('story-paragraphs').innerHTML =
-                            s.paragraphs.map(p => `<p>${p}</p>`).join('');
-                    }
-                    if (s.highlight) {
-                        document.getElementById('story-highlight').textContent = `"${s.highlight}"`;
-                    }
-                }
+        // Simple hamburger toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
 
-                // Values
-                if (data.values) {
-                    const v = data.values;
-                    document.getElementById('values-title').textContent = v.title;
-                    if (v.items) {
-                        document.getElementById('values-grid').innerHTML = v.items.map(item => `
-                            <div class="value-card">
-                                <div class="value-icon"><i data-lucide="${item.icon}"></i></div>
-                                <h3>${item.title}</h3>
-                                <p>${item.description}</p>
-                            </div>
-                        `).join('');
-                    }
-                }
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+            document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+        });
 
-                // CTA
-                if (data.cta) {
-                    const c = data.cta;
-                    document.getElementById('cta-headline').textContent = c.headline;
-                    document.getElementById('cta-description').textContent = c.description;
-                    document.getElementById('cta-button').textContent = c.buttonText;
-                }
-
-                // Re-initialize icons after dynamic content
-                lucide.createIcons();
-            })
-            .catch(err => {
-                console.log('Using default content');
-                lucide.createIcons();
+        // Close menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('open');
+                mobileMenu.classList.remove('open');
+                document.body.style.overflow = '';
             });
+        });
     </script>
 </body>
 </html>
