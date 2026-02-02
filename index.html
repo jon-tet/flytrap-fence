@@ -60,6 +60,7 @@
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { overflow-x: hidden; }
         html { scroll-behavior: smooth; }
         body {
             font-family: var(--font-body);
@@ -906,7 +907,7 @@
             <!-- Contact -->
             <section class="contact" id="contact">
                 <div class="contact-container">
-                    <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-info" data-aos="fade-up">
                         <h2>${hp.contact.headline}</h2>
                         <p>${hp.contact.description}</p>
                         <div class="contact-details">
@@ -915,7 +916,7 @@
                             <div class="contact-item"><div class="contact-item-icon"><i data-lucide="clock"></i></div><div class="contact-item-text"><h4>Business Hours</h4><p>${hp.contact.hours.replace(/\\n/g, '<br>')}</p></div></div>
                         </div>
                     </div>
-                    <div class="contact-form-wrapper" data-aos="fade-left">
+                    <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="100">
                         <h3>Request Your Free Quote</h3>
                         <p>Tell us about your project and we'll get back to you promptly.</p>
                         <form action="https://formspree.io/f/xwpkjpnv" method="POST">
