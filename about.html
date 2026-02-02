@@ -328,12 +328,48 @@
         .footer {
             background: var(--green-900);
             color: white;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem 1.5rem;
+        }
+        .footer-container { max-width: 1200px; margin: 0 auto; }
+        .footer-main {
+            display: grid;
+            grid-template-columns: 1.5fr repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        .footer-logo {
+            height: 48px;
+            filter: brightness(0) invert(1);
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+        .footer-brand p {
+            color: var(--green-200);
+            font-size: 0.9375rem;
+            line-height: 1.6;
+            max-width: 280px;
+        }
+        .footer-section h4 {
+            font-family: var(--font-heading);
+            font-size: 1.125rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .footer-section ul { list-style: none; }
+        .footer-section li { margin-bottom: 0.625rem; }
+        .footer-section a {
+            color: var(--green-200);
+            text-decoration: none;
+            font-size: 0.9375rem;
+        }
+        .footer-section a:hover { color: white; }
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 1.5rem;
             text-align: center;
         }
-        .footer p { color: var(--green-300); }
-        .footer a { color: var(--green-200); text-decoration: none; }
-        .footer a:hover { color: white; }
+        .footer-bottom p { color: var(--green-300); font-size: 0.875rem; }
 
         /* ========== RESPONSIVE ========== */
         @media (max-width: 1024px) {
@@ -341,6 +377,7 @@
             .hero-video video { height: 400px; }
             .hero-badge { left: 50%; transform: translateX(-50%); }
             .story-container { grid-template-columns: 1fr; gap: 3rem; }
+            .footer-main { grid-template-columns: 1fr 1fr; }
             .story-image { order: -1; }
             .story-image img { height: 450px; }
             .story-image::before { display: none; }
@@ -353,6 +390,9 @@
             .hero-video video { height: 320px; }
             .story { padding: 4rem 1.5rem; }
             .story-image img { height: 350px; }
+            .footer-main { grid-template-columns: 1fr; text-align: center; gap: 2rem; }
+            .footer-brand p { max-width: 100%; margin: 0 auto; }
+            .footer-logo { margin: 0 auto 1rem; display: block; }
         }
     </style>
 </head>
@@ -462,7 +502,44 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Flytrap Fence Company, LLC. All rights reserved. | <a href="/">Back to Home</a></p>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <img src="https://static.wixstatic.com/media/59f101_063e0164581d4bd99618bbc958cc6cdb~mv2.png" alt="Flytrap Fence" class="footer-logo">
+                    <p>Professional fence installation serving Wilmington and the Cape Fear region. Quality craftsmanship backed by a 5-year warranty.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="/#services">Wood Fences</a></li>
+                        <li><a href="/#services">Vinyl Fences</a></li>
+                        <li><a href="/#services">Aluminum Fences</a></li>
+                        <li><a href="/#services">Chain Link</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Service Areas</h4>
+                    <ul>
+                        <li><a href="/#contact">Wilmington</a></li>
+                        <li><a href="/#contact">Leland</a></li>
+                        <li><a href="/#contact">Hampstead</a></li>
+                        <li><a href="/#contact">Carolina Beach</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/#gallery">Our Work</a></li>
+                        <li><a href="/#reviews">Reviews</a></li>
+                        <li><a href="/#contact">Get a Quote</a></li>
+                        <li><a href="/about.html">About Joe</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flytrap Fence Company, LLC. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 
     <script>
