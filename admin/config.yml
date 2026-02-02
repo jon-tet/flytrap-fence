@@ -1,0 +1,115 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Enable editorial workflow for review process
+publish_mode: editorial_workflow
+
+# Where uploaded images go
+media_folder: "images"
+public_folder: "/images"
+
+# Site content collections
+collections:
+  # Single file for main site content
+  - name: "site"
+    label: "Site Content"
+    files:
+      - name: "homepage"
+        label: "Homepage"
+        file: "content/homepage.json"
+        fields:
+          # Hero Section
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Badge Text", name: "badge", widget: "string", default: "5-Year Workmanship Warranty" }
+              - { label: "Headline", name: "headline", widget: "string", default: "Your Trusted Fence Experts in Wilmington" }
+              - { label: "Headline Accent", name: "headlineAccent", widget: "string", default: "Fence Experts" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Hero Image", name: "image", widget: "image" }
+              - label: "Stats"
+                name: "stats"
+                widget: "list"
+                fields:
+                  - { label: "Number", name: "number", widget: "string" }
+                  - { label: "Label", name: "label", widget: "string" }
+
+          # Services Section
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+
+          # Trust/Why Choose Us Section
+          - label: "Why Choose Us"
+            name: "trust"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string", hint: "Icon name from Lucide (e.g., shield, star, clock)" }
+
+          # Reviews Section
+          - label: "Reviews"
+            name: "reviews"
+            widget: "object"
+            fields:
+              - { label: "Rating", name: "rating", widget: "string", default: "5.0" }
+              - { label: "Review Count Text", name: "countText", widget: "string", default: "Based on 47 reviews" }
+              - label: "Featured Reviews"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Initials", name: "initials", widget: "string" }
+                  - { label: "Date", name: "date", widget: "string" }
+                  - { label: "Review Text", name: "text", widget: "text" }
+
+          # Contact Section
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Headline", name: "headline", widget: "string", default: "Ready to Get Started?" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Service Area", name: "serviceArea", widget: "string" }
+              - { label: "Hours", name: "hours", widget: "text" }
+
+          # Service Areas
+          - label: "Service Areas"
+            name: "areas"
+            widget: "list"
+            field: { label: "Area", name: "area", widget: "string" }
+
+      # Gallery
+      - name: "gallery"
+        label: "Gallery"
+        file: "content/gallery.json"
+        fields:
+          - label: "Projects"
+            name: "projects"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Location", name: "location", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Featured (Large)", name: "featured", widget: "boolean", default: false }
+
+      # Company Info
+      - name: "company"
+        label: "Company Info"
+        file: "content/company.json"
+        fields:
+          - { label: "Company Name", name: "name", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Facebook URL", name: "facebook", widget: "string" }
+          - { label: "Instagram URL", name: "instagram", widget: "string" }
+          - { label: "Google Review URL", name: "googleReview", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }

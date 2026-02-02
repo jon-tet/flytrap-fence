@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "title": "Cap & Trim Wood Fence",
+      "location": "Winnabow, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_a49cce688b84431cb3d4474377fef585~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/f00d23_a49cce688b84431cb3d4474377fef585~mv2.jpg",
+      "featured": true
+    },
+    {
+      "title": "Aluminum Fence",
+      "location": "Wilmington, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_450,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+      "featured": false
+    },
+    {
+      "title": "Semi-Privacy Vinyl Fence",
+      "location": "Carolina Beach, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_450,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+      "featured": false
+    },
+    {
+      "title": "Commercial Chain Link",
+      "location": "Wilmington, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_ed7b3236652b40efac915e530e4e036b~mv2.png/v1/fill/w_600,h_450,al_c,q_85/f00d23_ed7b3236652b40efac915e530e4e036b~mv2.png",
+      "featured": false
+    },
+    {
+      "title": "Board-on-Board Wood Fence",
+      "location": "Hampstead, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_e5830914bc4f446393df01b042c6ce79~mv2.png/v1/fill/w_600,h_450,al_c,q_85/f00d23_e5830914bc4f446393df01b042c6ce79~mv2.png",
+      "featured": false
+    },
+    {
+      "title": "Vinyl Fence",
+      "location": "Leland, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_58caa85c49c640e5bf01412c7d954460~mv2.png/v1/fill/w_600,h_450,al_c,q_85/f00d23_58caa85c49c640e5bf01412c7d954460~mv2.png",
+      "featured": false
+    },
+    {
+      "title": "Gothic Style Picket Fence",
+      "location": "Wilmington, NC",
+      "image": "https://static.wixstatic.com/media/f00d23_b51daf5c5928408cb6ce1c80f9ef4504~mv2.jpeg/v1/fill/w_600,h_400,al_c,q_80/f00d23_b51daf5c5928408cb6ce1c80f9ef4504~mv2.jpeg",
+      "featured": false
+    }
+  ]
+}

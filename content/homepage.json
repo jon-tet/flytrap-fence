@@ -1,0 +1,80 @@
+{
+  "hero": {
+    "badge": "5-Year Workmanship Warranty",
+    "headline": "Your Trusted Fence Experts in Wilmington",
+    "headlineAccent": "Fence Experts",
+    "description": "If you're looking for a fence company that delivers top-tier customer service and professional installation, backed by a 5 year warranty, Flytrap Fence Company is the fence expert you can count on.",
+    "image": "https://static.wixstatic.com/media/f00d23_a49cce688b84431cb3d4474377fef585~mv2.jpg/v1/fill/w_800,h_600,al_c,q_85/f00d23_a49cce688b84431cb3d4474377fef585~mv2.jpg",
+    "stats": [
+      { "number": "500+", "label": "Fences Installed" },
+      { "number": "5.0 ★", "label": "Google Rating" },
+      { "number": "100%", "label": "Satisfaction" }
+    ]
+  },
+  "services": [
+    {
+      "title": "Wood Fences",
+      "description": "Board-on-board, cap & trim, stockade, and custom wood fence styles. Natural beauty with lasting durability.",
+      "image": "https://static.wixstatic.com/media/f00d23_a49cce688b84431cb3d4474377fef585~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_a49cce688b84431cb3d4474377fef585~mv2.jpg"
+    },
+    {
+      "title": "Vinyl Fences",
+      "description": "Low-maintenance vinyl privacy and semi-privacy fences. Weather-resistant and built to last for decades.",
+      "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg"
+    },
+    {
+      "title": "Chain Link",
+      "description": "Commercial and residential chain link fencing. Galvanized and vinyl-coated options available.",
+      "image": "https://static.wixstatic.com/media/f00d23_ed7b3236652b40efac915e530e4e036b~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_ed7b3236652b40efac915e530e4e036b~mv2.png"
+    },
+    {
+      "title": "Aluminum",
+      "description": "Elegant aluminum fencing for pools, yards, and decorative purposes. Rust-free and maintenance-free.",
+      "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png"
+    }
+  ],
+  "trust": [
+    { "title": "5-Year Warranty", "description": "Every fence backed by our comprehensive workmanship warranty", "icon": "shield" },
+    { "title": "Licensed & Insured", "description": "Fully licensed professionals with complete liability coverage", "icon": "file-check" },
+    { "title": "On-Time Delivery", "description": "Projects completed on schedule with clear communication", "icon": "clock" },
+    { "title": "5-Star Service", "description": "Top-tier customer service from quote to completion", "icon": "star" }
+  ],
+  "reviews": {
+    "rating": "5.0",
+    "countText": "Based on 47 reviews",
+    "items": [
+      {
+        "name": "Jennifer Martinez",
+        "initials": "JM",
+        "date": "2 weeks ago",
+        "text": "Flytrap Fence did an amazing job on our backyard privacy fence. The team was professional, showed up on time, and the quality of work exceeded our expectations. Highly recommend!"
+      },
+      {
+        "name": "Robert Thompson",
+        "initials": "RT",
+        "date": "a month ago",
+        "text": "Great communication from start to finish. They helped us choose the perfect aluminum fence for our pool area. The 5-year warranty gave us peace of mind."
+      },
+      {
+        "name": "Sarah Collins",
+        "initials": "SC",
+        "date": "3 weeks ago",
+        "text": "We needed a vinyl fence that could handle the coastal weather here in Carolina Beach. Flytrap delivered exactly what we wanted. Beautiful work, fair pricing!"
+      }
+    ]
+  },
+  "contact": {
+    "headline": "Ready to Get Started?",
+    "description": "Get a free, no-obligation quote for your fence project. We typically respond within 24 hours.",
+    "email": "info@flytrapfence.com",
+    "serviceArea": "Wilmington, Leland, Hampstead, NC & Surrounding Areas",
+    "hours": "Monday - Friday: 8am - 5pm\nSaturday: By Appointment"
+  },
+  "areas": [
+    "Wilmington, NC",
+    "Leland, NC",
+    "Hampstead, NC",
+    "Carolina Beach",
+    "Surrounding Areas"
+  ]
+}
