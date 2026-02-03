@@ -51,15 +51,33 @@ async function renderNav(containerId = 'site-nav') {
     </nav>
 
     <div class="mobile-menu" id="mobileMenu">
-        <a href="/services/wood-fences.html">Wood Fences</a>
-        <a href="/services/vinyl-fences.html">Vinyl Fences</a>
-        <a href="/services/aluminum-fences.html">Aluminum Fences</a>
-        <a href="/services/chain-link-fences.html">Chain Link Fences</a>
-        <a href="/#gallery">Our Work</a>
-        <a href="/#reviews">Reviews</a>
-        <a href="/about.html">About</a>
-        <a href="/fence-estimate.html">Pricing Calculator</a>
-        <a href="/#contact">Get a Free Quote</a>
+        <div class="mobile-menu-inner">
+            <div class="mobile-menu-links">
+                <div class="mobile-dropdown">
+                    <button class="mobile-dropdown-trigger" id="mobileServicesToggle">
+                        Services <i data-lucide="chevron-down"></i>
+                    </button>
+                    <div class="mobile-dropdown-menu" id="mobileServicesMenu">
+                        <a href="/services/wood-fences.html">Wood Fences</a>
+                        <a href="/services/vinyl-fences.html">Vinyl Fences</a>
+                        <a href="/services/aluminum-fences.html">Aluminum Fences</a>
+                        <a href="/services/chain-link-fences.html">Chain Link Fences</a>
+                    </div>
+                </div>
+                <a href="/#gallery">Our Work</a>
+                <a href="/#reviews">Reviews</a>
+                <a href="/about.html">About</a>
+                <a href="/fence-estimate.html">Pricing</a>
+            </div>
+            <div class="mobile-menu-cta">
+                <a href="tel:${co.phone}" class="mobile-phone">
+                    <i data-lucide="phone"></i> ${co.phone}
+                </a>
+                <a href="/#contact" class="btn btn-primary btn-full">
+                    Get a Free Quote <i data-lucide="arrow-right"></i>
+                </a>
+            </div>
+        </div>
     </div>`;
 }
 
@@ -124,6 +142,8 @@ async function renderFooter(containerId = 'site-footer') {
 function initMobileMenu() {
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
+    const servicesToggle = document.getElementById('mobileServicesToggle');
+    const servicesMenu = document.getElementById('mobileServicesMenu');
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', function() {
@@ -132,7 +152,15 @@ function initMobileMenu() {
             document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
         });
 
-        // Close menu when clicking a link
+        // Services dropdown toggle
+        if (servicesToggle && servicesMenu) {
+            servicesToggle.addEventListener('click', function() {
+                servicesToggle.classList.toggle('open');
+                servicesMenu.classList.toggle('open');
+            });
+        }
+
+        // Close menu when clicking a link (but not the services toggle)
         mobileMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('open');
