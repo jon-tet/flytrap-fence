@@ -17,6 +17,9 @@
     <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
+    <!-- Global Components -->
+    <script src="/js/components.js" defer></script>
+
     <!-- Page-specific styles -->
     <style>
         /* ========== ABOUT HERO ========== */
@@ -291,42 +294,8 @@
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="nav" id="navbar">
-        <div class="nav-container">
-            <a href="/" class="logo"><img src="https://static.wixstatic.com/media/f00d23_191d36094ef44709b09686e2527a741d~mv2.png/v1/fill/w_662,h_256,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f00d23_191d36094ef44709b09686e2527a741d~mv2.png" alt="Flytrap Fence Company" class="logo-img"></a>
-            <ul class="nav-links">
-                <li class="nav-dropdown">
-                    <a href="/#services" class="nav-dropdown-trigger">Services <i data-lucide="chevron-down"></i></a>
-                    <div class="nav-dropdown-menu">
-                        <a href="/services/wood-fences.html">Wood Fences</a>
-                        <a href="/services/vinyl-fences.html">Vinyl Fences</a>
-                        <a href="/services/aluminum-fences.html">Aluminum Fences</a>
-                        <a href="/services/chain-link-fences.html">Chain Link Fences</a>
-                    </div>
-                </li>
-                <li><a href="/#gallery">Our Work</a></li>
-                <li><a href="/#reviews">Reviews</a></li>
-                <li><a href="/about.html">About</a></li>
-                <li><a href="/#contact" class="nav-cta">Get a Free Quote</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="/services/wood-fences.html">Wood Fences</a>
-        <a href="/services/vinyl-fences.html">Vinyl Fences</a>
-        <a href="/services/aluminum-fences.html">Aluminum Fences</a>
-        <a href="/services/chain-link-fences.html">Chain Link Fences</a>
-        <a href="/#gallery">Our Work</a>
-        <a href="/#reviews">Reviews</a>
-        <a href="/about.html">About</a>
-        <a href="/#contact">Get a Free Quote</a>
-    </div>
+    <!-- Navigation (loaded via components.js) -->
+    <div id="site-nav"></div>
 
     <!-- Hero -->
     <section class="about-hero">
@@ -401,75 +370,12 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-main">
-                <div class="footer-brand">
-                    <img src="https://static.wixstatic.com/media/f00d23_191d36094ef44709b09686e2527a741d~mv2.png/v1/fill/w_662,h_256,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f00d23_191d36094ef44709b09686e2527a741d~mv2.png" alt="Flytrap Fence Company" class="footer-logo-img">
-                    <p>Professional fence installation serving Wilmington and the Cape Fear region. Quality craftsmanship backed by a 5-year warranty.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="/services/wood-fences.html">Wood Fences</a></li>
-                        <li><a href="/services/vinyl-fences.html">Vinyl Fences</a></li>
-                        <li><a href="/services/aluminum-fences.html">Aluminum Fences</a></li>
-                        <li><a href="/services/chain-link-fences.html">Chain Link Fences</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Service Areas</h4>
-                    <ul>
-                        <li><a href="/#contact">Wilmington</a></li>
-                        <li><a href="/#contact">Leland</a></li>
-                        <li><a href="/#contact">Hampstead</a></li>
-                        <li><a href="/#contact">Carolina Beach</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="/#gallery">Our Work</a></li>
-                        <li><a href="/#reviews">Reviews</a></li>
-                        <li><a href="/#contact">Get a Quote</a></li>
-                        <li><a href="/about.html">About Joe</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Flytrap Fence Company, LLC. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    <!-- Footer (loaded via components.js) -->
+    <div id="site-footer"></div>
 
     <script>
-        // Initialize icons
-        lucide.createIcons();
-
-        // Nav scroll behavior
-        window.addEventListener('scroll', () => {
-            document.getElementById('navbar')?.classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Simple hamburger toggle
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('open');
-            mobileMenu.classList.toggle('open');
-            document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-        });
-
-        // Close menu when clicking a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', function() {
-                hamburger.classList.remove('open');
-                mobileMenu.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-        });
+        // Initialize global components (nav, footer)
+        FlytrapComponents.initGlobalComponents();
     </script>
 </body>
 </html>
