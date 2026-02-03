@@ -478,8 +478,289 @@ img {
     margin: 0 auto;
 }
 
+/* ---------- BREADCRUMBS ---------- */
+.breadcrumbs {
+    padding: 1rem 2rem;
+    margin-top: var(--nav-height);
+    background: var(--cream-50);
+    border-bottom: 1px solid var(--cream-200);
+}
+
+.breadcrumbs-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.breadcrumbs a {
+    color: var(--green-700);
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs span {
+    color: var(--text-light);
+}
+
+.breadcrumbs svg {
+    width: 14px;
+    height: 14px;
+    color: var(--text-light);
+}
+
+/* ---------- ICON CARDS ---------- */
+/* Reusable card with icon - use for benefits, features, values, etc. */
+.icon-card {
+    padding: 2rem;
+    background: var(--cream-50);
+    border-radius: var(--radius-sm);
+    transition: all 0.2s ease;
+}
+
+.icon-card:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.icon-card--white {
+    background: white;
+    box-shadow: var(--shadow-sm);
+}
+
+.icon-card--centered {
+    text-align: center;
+}
+
+.icon-box {
+    width: 56px;
+    height: 56px;
+    background: var(--green-700);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+.icon-card--centered .icon-box {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-box svg {
+    width: 28px;
+    height: 28px;
+    color: white;
+}
+
+.icon-box--light {
+    background: var(--green-50);
+}
+
+.icon-box--light svg {
+    color: var(--green-700);
+}
+
+.icon-box--round {
+    border-radius: 50%;
+}
+
+.icon-box--transparent {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-box--transparent svg {
+    color: var(--green-300);
+}
+
+.icon-card h3 {
+    font-size: 1.25rem;
+    color: var(--green-800);
+    margin-bottom: 0.75rem;
+}
+
+.icon-card p {
+    font-size: 0.9375rem;
+    color: var(--text-medium);
+    line-height: 1.6;
+}
+
+/* ---------- FAQ ACCORDION ---------- */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.faq-question {
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    background: white;
+    border: none;
+    text-align: left;
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--green-900);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.2s ease;
+}
+
+.faq-question:hover {
+    background: var(--cream-50);
+}
+
+.faq-question svg {
+    width: 20px;
+    height: 20px;
+    color: var(--green-600);
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.faq-item.open .faq-question svg {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer-content {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.faq-item.open .faq-answer {
+    max-height: 500px;
+}
+
+/* ---------- FORM STYLES ---------- */
+.form-field label {
+    display: block;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    color: var(--green-800);
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 2px solid var(--cream-300);
+    border-radius: var(--radius-sm);
+    font-size: 1rem;
+    font-family: var(--font-body);
+    transition: border-color 0.2s ease;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: none;
+    border-color: var(--green-600);
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-field--lg input,
+.form-field--lg select {
+    padding: 1rem;
+    font-size: 1.125rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.form-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.form-note {
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    margin-top: 1rem;
+}
+
+.form-note svg {
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 0.25rem;
+}
+
+/* ---------- TRUST BADGES ---------- */
+.trust-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--green-700);
+    font-weight: 600;
+}
+
+.trust-item svg {
+    width: 18px;
+    height: 18px;
+    color: var(--green-600);
+}
+
+/* ---------- CARD GRID LAYOUTS ---------- */
+.card-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+.card-grid--2 { grid-template-columns: repeat(2, 1fr); }
+.card-grid--3 { grid-template-columns: repeat(3, 1fr); }
+.card-grid--4 { grid-template-columns: repeat(4, 1fr); }
+
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 1024px) {
+    .card-grid--4 { grid-template-columns: repeat(2, 1fr); }
+    .card-grid--3 { grid-template-columns: repeat(2, 1fr); }
     .footer-main {
         grid-template-columns: 1fr 1fr;
     }
@@ -509,5 +790,28 @@ img {
     .footer-bottom {
         justify-content: center;
         text-align: center;
+    }
+
+    /* Card grids */
+    .card-grid--4,
+    .card-grid--3,
+    .card-grid--2 {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Form layouts */
+    .form-row,
+    .form-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    /* Trust badges */
+    .trust-row {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
     }
 }
