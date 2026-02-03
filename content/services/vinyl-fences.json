@@ -1,0 +1,194 @@
+{
+  "seo": {
+    "title": "Vinyl Fence Installation Wilmington NC | Low-Maintenance Privacy Fencing",
+    "description": "Expert vinyl fence installation in Wilmington, Leland & Hampstead NC. Weather-resistant, no painting or staining required. Lifetime warranty available. Free quotes!",
+    "slug": "vinyl-fence-installation-wilmington-nc"
+  },
+  "hero": {
+    "title": "Vinyl Fences",
+    "headline": "Low-Maintenance Vinyl Fence Installation in Wilmington",
+    "accent": "Vinyl Fence",
+    "description": "Want a beautiful fence without the upkeep? Vinyl fencing delivers the classic look of painted wood without ever needing to be painted, stained, or sealed. Perfect for Wilmington's humid coastal climate, our premium vinyl fences resist moisture, salt air, insects, and UV fading—looking great year after year with nothing more than an occasional rinse.",
+    "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_800,h_600,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+    "badge": "Zero Maintenance"
+  },
+  "benefits": {
+    "title": "Why Vinyl Fencing Is Perfect for Coastal NC",
+    "items": [
+      {
+        "title": "Maintenance-Free Living",
+        "description": "Unlike wood, vinyl never needs painting, staining, or sealing. No sanding, no scraping, no annual treatment. Your fence stays beautiful with just an occasional spray from the garden hose. Spend your weekends enjoying your yard, not maintaining it.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Built for Coastal Weather",
+        "description": "Wilmington's humidity, salt air, and intense sun are tough on traditional fencing. Vinyl is engineered to thrive in these conditions. It won't rot, warp, crack, or splinter—and UV inhibitors prevent fading and yellowing even in direct sunlight.",
+        "icon": "sun"
+      },
+      {
+        "title": "Exceptional Durability",
+        "description": "Modern vinyl fencing is incredibly strong. Our commercial-grade PVC fences are rated to withstand winds up to 110 mph and come with manufacturer warranties of 20 years to lifetime. This is a fence built for the long haul.",
+        "icon": "shield"
+      },
+      {
+        "title": "Complete Privacy",
+        "description": "Vinyl privacy fences provide solid, gap-free coverage from day one—and they stay that way. Unlike wood that can shrink and create gaps over time, vinyl panels maintain their tight fit permanently.",
+        "icon": "eye-off"
+      },
+      {
+        "title": "Safe for Kids & Pets",
+        "description": "Vinyl fencing has no splinters, no exposed nails or screws, and no rough edges. The smooth surface is safe for children and pets to touch and play against. It's also non-toxic and doesn't require chemical treatments.",
+        "icon": "heart"
+      },
+      {
+        "title": "Lifetime Value",
+        "description": "While vinyl costs more upfront than wood, the total cost of ownership is significantly lower. When you factor in the money and time saved on maintenance over 25+ years, vinyl is often the more economical choice.",
+        "icon": "calculator"
+      }
+    ]
+  },
+  "styles": {
+    "title": "Vinyl Fence Styles We Install",
+    "description": "Today's vinyl fences offer versatility that rivals wood. From full-privacy panels to decorative picket styles, we install a complete range of options to suit any property and aesthetic:",
+    "items": [
+      {
+        "name": "Privacy (Solid Panel)",
+        "description": "Our most popular vinyl option. Full-height solid panels with no gaps provide complete privacy and create a clean, contemporary look. Tongue-and-groove construction ensures panels stay tight and secure. Available in 6', 7', and 8' heights.",
+        "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+        "bestFor": "Backyards, Pool Areas, Privacy"
+      },
+      {
+        "name": "Semi-Privacy (Shadowbox)",
+        "description": "Alternating boards with small gaps allow airflow and light while still providing significant privacy. This style works beautifully for side yards or areas where you want definition without feeling completely closed in.",
+        "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+        "bestFor": "Side Yards, Wind Exposure, Partial Privacy"
+      },
+      {
+        "name": "Privacy with Lattice Top",
+        "description": "Solid privacy panels topped with decorative lattice add architectural interest and a touch of elegance. The lattice allows additional light and airflow at the top while maintaining full privacy at eye level. A popular choice for upscale properties.",
+        "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+        "bestFor": "Decorative Appeal, Gardens"
+      },
+      {
+        "name": "Picket Fence",
+        "description": "Classic American styling with zero maintenance. Our vinyl picket fences capture traditional charm while never needing paint. Available in various picket profiles, spacings, and heights to complement any home's architecture.",
+        "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+        "bestFor": "Front Yards, Traditional Homes"
+      },
+      {
+        "name": "Ranch Rail (Post & Rail)",
+        "description": "Two, three, or four-rail designs perfect for large properties, horse farms, and rural aesthetics. Available in classic white or woodgrain textures that replicate the look of painted or natural wood from a distance.",
+        "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+        "bestFor": "Large Properties, Horse Farms, Boundaries"
+      },
+      {
+        "name": "Pool Fence (Code-Compliant)",
+        "description": "Specially designed to meet pool safety codes while maintaining clean aesthetics. Features self-closing, self-latching gates and proper spacing to prevent climbing. Available in privacy and semi-privacy styles.",
+        "image": "https://static.wixstatic.com/media/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg/v1/fill/w_600,h_400,al_c,q_80/f00d23_96bc5b11f29e48e6abc3ee4bb22e59d0~mv2.jpg",
+        "bestFor": "Swimming Pools, Safety Compliance"
+      }
+    ]
+  },
+  "process": {
+    "title": "Our Vinyl Fence Installation Process",
+    "steps": [
+      {
+        "title": "Property Assessment",
+        "description": "We evaluate your property's terrain, measure precisely, discuss your goals, and review any HOA or municipal requirements. We'll also identify underground utilities and optimal gate placements."
+      },
+      {
+        "title": "Style & Color Selection",
+        "description": "Choose from a range of styles, heights, and colors including classic white, tan, gray, and woodgrain textures. We bring samples so you can see and feel the quality before committing."
+      },
+      {
+        "title": "Detailed Quote",
+        "description": "You receive a comprehensive written quote within 48 hours detailing all materials, manufacturer specifications, installation timeline, and warranty information. Our quotes are all-inclusive with no hidden costs."
+      },
+      {
+        "title": "Permit & HOA Coordination",
+        "description": "We handle permit applications and can provide documentation for HOA approval. Our team knows the requirements for New Hanover, Brunswick, and Pender counties and ensures full compliance."
+      },
+      {
+        "title": "Expert Installation",
+        "description": "Our crews install vinyl fencing using manufacturer-specified techniques. Posts are set in concrete for maximum stability, and all components are properly secured and aligned. Most installations complete in 1-2 days."
+      },
+      {
+        "title": "Quality Inspection",
+        "description": "We conduct a thorough walkthrough to ensure every panel is level, every gate operates smoothly, and every detail meets our standards. You receive warranty documentation and simple care instructions."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Vinyl Fence Questions & Answers",
+    "items": [
+      {
+        "question": "How does vinyl fencing hold up in hurricane season?",
+        "answer": "Quality vinyl fencing is engineered to withstand severe weather. The premium vinyl we install is rated for winds up to 110 mph when properly installed. The flexibility of vinyl actually helps it survive high winds—it can flex without breaking. We also set posts deep in concrete (minimum 2 feet) for maximum wind resistance."
+      },
+      {
+        "question": "Will vinyl fencing turn yellow or fade in the sun?",
+        "answer": "Not with quality vinyl. The fencing we install contains titanium dioxide UV inhibitors that prevent yellowing and fading. These aren't surface coatings that wear off—they're engineered into the material itself. Most manufacturers back this with warranties of 20 years or more against fading."
+      },
+      {
+        "question": "Is vinyl fencing more expensive than wood?",
+        "answer": "Vinyl has a higher upfront cost—typically 30-50% more than comparable wood fencing. However, when you factor in the cost of staining, sealing, and repairs over a wood fence's lifetime (approximately $500-1,500 every 2-3 years), vinyl often proves more economical over the long term. Plus, you never spend another weekend on fence maintenance."
+      },
+      {
+        "question": "Can vinyl fencing be installed on slopes?",
+        "answer": "Yes, but with some considerations. Vinyl fence panels can be stepped down slopes (like stair steps) to follow grade changes. Racking (angling panels) is limited with vinyl due to its rigid panel construction. During your consultation, we'll assess your terrain and recommend the best approach."
+      },
+      {
+        "question": "What colors and styles are available?",
+        "answer": "We offer vinyl fencing in classic white, almond/tan, clay/gray, and several woodgrain textures that replicate cedar, walnut, and other natural wood tones. Styles range from privacy and semi-privacy panels to picket fences and ranch rails. We'll bring samples to your consultation so you can see the options firsthand."
+      },
+      {
+        "question": "How do I clean my vinyl fence?",
+        "answer": "That's the beauty of vinyl—it requires almost no maintenance. For general cleaning, simply rinse with a garden hose. For stubborn dirt, mildew, or stains, a mixture of water and mild dish soap with a soft brush works perfectly. Avoid abrasive cleaners or pressure washers on high settings."
+      },
+      {
+        "question": "Can vinyl fencing be repaired if damaged?",
+        "answer": "Yes. Most vinyl fence systems are modular, meaning individual pickets, panels, or rails can be replaced without disturbing the rest of the fence. However, damage is rare—vinyl doesn't rot, splinter, or deteriorate like wood. The most common cause of vinyl fence damage is impact (vehicles, falling trees, etc.)."
+      },
+      {
+        "question": "Does vinyl fencing meet pool code requirements?",
+        "answer": "Absolutely. We install vinyl pool fencing that meets all North Carolina pool barrier codes, including proper height (minimum 4 feet), non-climbable design, and self-closing/self-latching gate requirements. We'll ensure your fence passes inspection."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Vinyl Fence Pricing in Wilmington",
+    "range": "$35 - $75 per linear foot installed",
+    "description": "Vinyl fence pricing varies based on style, height, and manufacturer. Standard privacy fencing starts around $35/linear foot, while premium styles with decorative elements or woodgrain textures range from $50-$75/linear foot. All quotes include professional installation, concrete post settings, and cleanup. We only install commercial-grade vinyl with manufacturer warranties.",
+    "includes": [
+      "Commercial-grade virgin vinyl materials",
+      "Aluminum-reinforced posts and rails",
+      "Concrete post setting for wind resistance",
+      "Professional installation by trained crews",
+      "Permit coordination and utility marking",
+      "Complete site cleanup",
+      "5-year workmanship warranty + manufacturer warranty"
+    ]
+  },
+  "cta": {
+    "headline": "Experience Maintenance-Free Fencing",
+    "description": "Request your free quote for premium vinyl fence installation in Wilmington, Leland, Hampstead, Carolina Beach, or anywhere in the Cape Fear region. Discover why homeowners are choosing vinyl for lasting beauty without the maintenance.",
+    "buttonText": "Get Your Free Quote"
+  },
+  "related": [
+    {
+      "name": "Wood Fences",
+      "url": "/services/wood-fences.html",
+      "description": "Classic natural beauty at a lower initial cost"
+    },
+    {
+      "name": "Aluminum Fences",
+      "url": "/services/aluminum-fences.html",
+      "description": "Elegant ornamental option for pools and front yards"
+    },
+    {
+      "name": "Chain Link Fences",
+      "url": "/services/chain-link-fences.html",
+      "description": "Economical choice for security and pet containment"
+    }
+  ]
+}

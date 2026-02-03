@@ -162,3 +162,119 @@ collections:
               - { label: "Headline", name: "headline", widget: "string", default: "Ready to Get Started?" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Button Text", name: "buttonText", widget: "string", default: "Get Your Free Quote" }
+
+  # Service Pages Collection
+  - name: "services"
+    label: "Service Pages"
+    folder: "content/services"
+    create: true
+    slug: "{{slug}}"
+    format: "json"
+    fields:
+      # SEO Fields
+      - label: "SEO"
+        name: "seo"
+        widget: "object"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string", hint: "Shows in browser tab and search results" }
+          - { label: "Meta Description", name: "description", widget: "text", hint: "155-160 characters for search results" }
+          - { label: "URL Slug", name: "slug", widget: "string", hint: "e.g., wood-fence-installation-wilmington-nc" }
+
+      # Hero Section
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - { label: "Service Name", name: "title", widget: "string" }
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Headline Accent", name: "accent", widget: "string", hint: "Word(s) to highlight in green" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Hero Image", name: "image", widget: "image" }
+          - { label: "Badge Text", name: "badge", widget: "string", default: "Professional Installation" }
+
+      # Benefits Section
+      - label: "Benefits"
+        name: "benefits"
+        widget: "object"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string", default: "Why Choose This Fence?" }
+          - label: "Benefit Items"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string" }
+
+      # Styles/Options Section
+      - label: "Fence Styles"
+        name: "styles"
+        widget: "object"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string", default: "Popular Styles" }
+          - { label: "Section Description", name: "description", widget: "text" }
+          - label: "Style Options"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Style Name", name: "name", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Best For", name: "bestFor", widget: "string", hint: "e.g., Privacy, Security, Pets" }
+
+      # Process Section
+      - label: "Our Process"
+        name: "process"
+        widget: "object"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string", default: "Our Installation Process" }
+          - label: "Steps"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { label: "Step Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+
+      # FAQ Section
+      - label: "FAQ"
+        name: "faq"
+        widget: "object"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string", default: "Frequently Asked Questions" }
+          - label: "Questions"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Question", name: "question", widget: "string" }
+              - { label: "Answer", name: "answer", widget: "text" }
+
+      # Pricing Info
+      - label: "Pricing Section"
+        name: "pricing"
+        widget: "object"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string", default: "Investment & Value" }
+          - { label: "Price Range", name: "range", widget: "string", hint: "e.g., $25-$45 per linear foot" }
+          - { label: "Description", name: "description", widget: "text" }
+          - label: "What's Included"
+            name: "includes"
+            widget: "list"
+            field: { label: "Item", name: "item", widget: "string" }
+
+      # CTA Section
+      - label: "Call to Action"
+        name: "cta"
+        widget: "object"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Button Text", name: "buttonText", widget: "string", default: "Get Your Free Quote" }
+
+      # Related Services
+      - label: "Related Services"
+        name: "related"
+        widget: "list"
+        fields:
+          - { label: "Service Name", name: "name", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Brief Description", name: "description", widget: "string" }

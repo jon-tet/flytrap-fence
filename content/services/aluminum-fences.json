@@ -1,0 +1,194 @@
+{
+  "seo": {
+    "title": "Aluminum Fence Installation Wilmington NC | Pool & Ornamental Fencing",
+    "description": "Professional aluminum fence installation in Wilmington NC. Elegant, rust-free pool fencing & decorative options. Never paint again. Free quotes available!",
+    "slug": "aluminum-fence-installation-wilmington-nc"
+  },
+  "hero": {
+    "title": "Aluminum Fences",
+    "headline": "Elegant Aluminum Fence Installation in Wilmington",
+    "accent": "Aluminum Fence",
+    "description": "Elevate your property with the timeless elegance of aluminum fencing. Perfect for pools, front yards, and anywhere you want classic wrought-iron style without the rust and maintenance. Our powder-coated aluminum fences deliver lasting beauty in Wilmington's coastal climate—no painting, no rust, no worries.",
+    "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_800,h_600,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+    "badge": "Rust-Free Forever"
+  },
+  "benefits": {
+    "title": "Why Aluminum Fencing Stands Apart",
+    "items": [
+      {
+        "title": "Rust-Free Guarantee",
+        "description": "Unlike wrought iron, aluminum will never rust—even in Wilmington's salt air and humid conditions. The powder-coat finish is baked on for a durable, corrosion-proof barrier that maintains its beauty indefinitely.",
+        "icon": "droplets"
+      },
+      {
+        "title": "Timeless Elegance",
+        "description": "Aluminum fencing offers the sophisticated look of traditional wrought iron at a fraction of the weight and cost. Clean lines, decorative finials, and classic profiles add curb appeal and property value.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Pool Code Compliant",
+        "description": "Aluminum is the premium choice for pool enclosures. Our fences meet all North Carolina pool barrier codes with proper height, self-closing gates, and non-climbable designs that keep your pool area safe and beautiful.",
+        "icon": "shield-check"
+      },
+      {
+        "title": "Zero Maintenance",
+        "description": "No painting, no staining, no rust treatment—ever. Aluminum fencing stays beautiful with just an occasional rinse. The powder-coat finish resists fading, chalking, and peeling for decades.",
+        "icon": "sparkles"
+      },
+      {
+        "title": "Lightweight & Strong",
+        "description": "Aluminum is significantly lighter than steel or iron while maintaining excellent strength. This makes installation easier, reduces stress on posts, and allows for longer spans between posts in many applications.",
+        "icon": "feather"
+      },
+      {
+        "title": "Enhances Property Value",
+        "description": "A quality aluminum fence signals attention to detail and raises the perceived value of your home. Real estate professionals consistently cite ornamental fencing as a feature that attracts buyers and commands premium pricing.",
+        "icon": "trending-up"
+      }
+    ]
+  },
+  "styles": {
+    "title": "Aluminum Fence Styles We Install",
+    "description": "From classic flat-top rails to ornate spear-point pickets, aluminum fencing offers a wide range of styles to complement any architecture. We install residential and commercial-grade aluminum in various heights and configurations:",
+    "items": [
+      {
+        "name": "Flat Top",
+        "description": "Clean, contemporary lines with a smooth horizontal top rail. This streamlined style complements modern and transitional architecture beautifully. No protruding finials means a sleek profile that won't snag clothing or pool towels.",
+        "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+        "bestFor": "Modern Homes, Pool Areas, Contemporary Style"
+      },
+      {
+        "name": "Spear Top (Classic)",
+        "description": "Traditional pointed finials evoke the look of classic wrought iron. Spear-point pickets add an elegant, formal touch that's perfect for front yards, estate properties, and anywhere you want timeless curb appeal.",
+        "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+        "bestFor": "Front Yards, Traditional Homes, Estate Properties"
+      },
+      {
+        "name": "Staggered Spear (Victorian)",
+        "description": "Alternating picket heights create a decorative rhythm reminiscent of Victorian-era ironwork. This ornate style makes a statement and is ideal for historic homes, formal gardens, and properties seeking distinctive character.",
+        "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+        "bestFor": "Victorian Homes, Historic Properties, Formal Gardens"
+      },
+      {
+        "name": "Pool Fence (Safety Compliant)",
+        "description": "Specifically engineered to meet pool barrier codes. Features self-closing, self-latching gates with magna-latch hardware, proper picket spacing (under 4 inches), and non-climbable design. Available in flat-top or decorative styles.",
+        "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+        "bestFor": "Swimming Pools, Hot Tubs, Safety Compliance"
+      },
+      {
+        "name": "Puppy Picket",
+        "description": "Standard aluminum fence with an added lower rail and closer picket spacing near the ground. This prevents small dogs, puppies, and small children from squeezing through—without sacrificing the fence's elegant appearance.",
+        "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+        "bestFor": "Small Dogs, Puppies, Small Children"
+      },
+      {
+        "name": "Commercial Grade",
+        "description": "Heavy-duty aluminum with thicker walls, larger pickets, and industrial-strength hardware. Designed for high-traffic commercial applications, municipal properties, and anywhere demanding maximum durability and security.",
+        "image": "https://static.wixstatic.com/media/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png/v1/fill/w_600,h_400,al_c,q_85/f00d23_f719bc8a6b8d4b6f9d3c1534e3096521~mv2.png",
+        "bestFor": "Commercial, Municipal, High-Traffic Areas"
+      }
+    ]
+  },
+  "process": {
+    "title": "Our Aluminum Fence Installation Process",
+    "steps": [
+      {
+        "title": "Design Consultation",
+        "description": "We visit your property to understand your goals—whether that's pool safety, curb appeal, pet containment, or all three. We measure carefully and discuss style, height, and color options that complement your home."
+      },
+      {
+        "title": "Style & Color Selection",
+        "description": "Choose from multiple ornamental styles, heights (typically 3-6 feet), and color options including black, bronze, white, and custom colors. We provide samples and can match existing architectural elements."
+      },
+      {
+        "title": "Detailed Proposal",
+        "description": "You receive a comprehensive quote with exact specifications, manufacturer warranties, installation timeline, and total investment. Our pricing includes everything—no surprise add-ons or hidden fees."
+      },
+      {
+        "title": "HOA & Permit Coordination",
+        "description": "Many Wilmington-area HOAs have specific fencing requirements. We prepare documentation and drawings for HOA approval and handle municipal permit applications on your behalf."
+      },
+      {
+        "title": "Professional Installation",
+        "description": "Posts are set in concrete for stability, and panels are precisely installed using manufacturer-specified techniques. Gates are fitted with self-closing hinges and quality latches. Most residential installations complete in 1-2 days."
+      },
+      {
+        "title": "Final Inspection",
+        "description": "We conduct a thorough walkthrough, demonstrate gate operation, verify all components meet specifications, and provide warranty documentation. Your complete satisfaction is our priority."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Aluminum Fence Questions & Answers",
+    "items": [
+      {
+        "question": "Will aluminum fencing rust in Wilmington's salty, humid air?",
+        "answer": "Never. Aluminum is completely rust-proof—it's not just rust-resistant, it physically cannot rust. The powder-coat finish adds an extra layer of protection against scratches and environmental exposure. This makes aluminum ideal for coastal Carolina properties where salt air quickly corrodes steel and iron."
+      },
+      {
+        "question": "Is aluminum fencing strong enough for security?",
+        "answer": "Yes. While aluminum is lighter than steel, our residential-grade aluminum fencing is plenty strong for securing yards, pools, and pets. For commercial applications or enhanced security needs, we install commercial-grade aluminum with thicker walls and heavier-duty construction."
+      },
+      {
+        "question": "Does aluminum fencing meet pool code requirements?",
+        "answer": "Absolutely. We install aluminum pool fencing that meets all North Carolina pool barrier codes. This includes minimum 4-foot height (we typically recommend 5 feet), non-climbable design, maximum 4-inch picket spacing, and self-closing/self-latching gates with locks. We'll ensure your fence passes inspection."
+      },
+      {
+        "question": "What colors are available for aluminum fencing?",
+        "answer": "Standard colors include black (most popular), bronze, white, and sometimes hunter green. These colors are powder-coated—baked on for durability—not painted. Custom colors are available from most manufacturers for an additional charge if you need to match specific architectural elements."
+      },
+      {
+        "question": "How does aluminum compare to wrought iron?",
+        "answer": "Aluminum offers the same elegant look as wrought iron without the drawbacks. It never rusts, never needs painting, costs less, weighs less (easier installation), and requires zero maintenance. The only advantage of true wrought iron is marginally greater strength, which is rarely needed for residential applications."
+      },
+      {
+        "question": "Can aluminum fencing be used for pet containment?",
+        "answer": "Yes, with appropriate specifications. Standard aluminum fencing works well for larger dogs. For small dogs, puppies, or cats, we recommend 'puppy picket' styles with closer spacing at the bottom. We'll discuss your pets' specific needs during the consultation and recommend appropriate solutions."
+      },
+      {
+        "question": "How long does aluminum fencing last?",
+        "answer": "With the powder-coat finish, aluminum fencing easily lasts 30+ years—often a lifetime. There's no rust, no rot, and minimal wear. Most manufacturers offer warranties of 20 years or more on the finish, and lifetime warranties on the aluminum itself."
+      },
+      {
+        "question": "Is aluminum fencing more expensive than other options?",
+        "answer": "Aluminum falls in the mid-to-upper price range, typically more than chain link and wood but comparable to vinyl. However, its zero-maintenance nature and exceptional lifespan make it very cost-effective over time. For pool areas especially, aluminum is often the best value when you consider longevity and code compliance."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Aluminum Fence Pricing in Wilmington",
+    "range": "$35 - $70 per linear foot installed",
+    "description": "Aluminum fence pricing varies based on grade, style, and height. Residential-grade flat-top fencing starts around $35/linear foot, while ornamental styles with decorative finials and commercial-grade options range from $45-$70/linear foot. Pool gates and specialty hardware are priced separately. All quotes include professional installation and cleanup.",
+    "includes": [
+      "Powder-coated aluminum fence panels",
+      "Matching posts and caps",
+      "Concrete post settings",
+      "Professional installation",
+      "Standard self-closing gate with hardware",
+      "Permit and HOA coordination",
+      "5-year workmanship warranty + manufacturer warranty"
+    ]
+  },
+  "cta": {
+    "headline": "Ready for Rust-Free Elegance?",
+    "description": "Request your free quote for aluminum fence installation in Wilmington, Leland, Hampstead, Wrightsville Beach, or anywhere in the Cape Fear region. Discover why discerning homeowners choose aluminum for lasting beauty and zero maintenance.",
+    "buttonText": "Get Your Free Quote"
+  },
+  "related": [
+    {
+      "name": "Vinyl Fences",
+      "url": "/services/vinyl-fences.html",
+      "description": "Privacy-focused maintenance-free option"
+    },
+    {
+      "name": "Wood Fences",
+      "url": "/services/wood-fences.html",
+      "description": "Natural beauty and complete privacy"
+    },
+    {
+      "name": "Chain Link Fences",
+      "url": "/services/chain-link-fences.html",
+      "description": "Budget-friendly security option"
+    }
+  ]
+}
