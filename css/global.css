@@ -459,11 +459,23 @@ img {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .section-label svg {
     width: 16px;
     height: 16px;
+}
+
+/* Dark background variant */
+.section-label--dark {
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--green-100);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-label--dark svg {
+    color: var(--green-200);
 }
 
 .section-title {
