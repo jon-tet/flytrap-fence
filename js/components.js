@@ -141,15 +141,7 @@ function initMobileMenu() {
     }
 }
 
-// Initialize nav scroll behavior
-function initNavScroll() {
-    window.addEventListener('scroll', () => {
-        const navbar = document.getElementById('navbar');
-        if (navbar) {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
-        }
-    });
-}
+// Nav scroll behavior removed - nav is always in its opaque state
 
 // Initialize all global components
 async function initGlobalComponents() {
@@ -163,9 +155,8 @@ async function initGlobalComponents() {
         lucide.createIcons();
     }
 
-    // Initialize functionality
+    // Initialize mobile menu functionality
     initMobileMenu();
-    initNavScroll();
 }
 
 // Export for use
@@ -173,7 +164,6 @@ window.FlytrapComponents = {
     renderNav,
     renderFooter,
     initMobileMenu,
-    initNavScroll,
     initGlobalComponents,
     loadCompanyData
 };

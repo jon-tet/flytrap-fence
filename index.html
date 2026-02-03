@@ -1215,10 +1215,7 @@
             AOS.init({ duration: 600, once: true, offset: 50 });
         }
 
-        // Nav scroll behavior
-        window.addEventListener('scroll', () => {
-            document.getElementById('navbar')?.classList.toggle('scrolled', window.scrollY > 50);
-        });
+        // Nav scroll behavior removed - nav is always in its opaque state
 
         // Simple hamburger toggle - set up after content loads
         function initMobileMenu() {
