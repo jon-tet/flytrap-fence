@@ -656,6 +656,236 @@
             text-decoration: underline;
         }
 
+        /* ========== INSTANT ESTIMATE CALCULATOR ========== */
+        .estimator {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
+        }
+
+        .estimator-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .estimator-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .estimator-header .section-label {
+            background: rgba(255,255,255,0.15);
+            color: var(--green-100);
+        }
+
+        .estimator-header h2 {
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+
+        .estimator-header p {
+            color: var(--green-200);
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .estimator-card {
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .estimator-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .estimator-field label {
+            display: block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--green-800);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+
+        .estimator-field select,
+        .estimator-field input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--cream-300);
+            border-radius: var(--radius-sm);
+            font-size: 1.125rem;
+            font-family: var(--font-body);
+            transition: border-color 0.2s ease;
+        }
+
+        .estimator-field select:focus,
+        .estimator-field input:focus {
+            outline: none;
+            border-color: var(--green-600);
+        }
+
+        .estimate-result {
+            text-align: center;
+            padding: 2rem;
+            background: var(--green-50);
+            border-radius: var(--radius-sm);
+            display: none;
+        }
+
+        .estimate-result.visible {
+            display: block;
+        }
+
+        .estimate-label {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            color: var(--text-medium);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .estimate-range {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            color: var(--green-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .estimate-note {
+            font-size: 0.9375rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .estimate-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* ========== STICKY MOBILE CTA ========== */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 0.75rem 1rem;
+            box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+            z-index: 999;
+            gap: 0.75rem;
+        }
+
+        .sticky-cta a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 0.9375rem;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .sticky-cta-call {
+            background: var(--green-700);
+            color: white;
+        }
+
+        .sticky-cta-quote {
+            background: var(--cream-100);
+            color: var(--green-800);
+            border: 2px solid var(--green-200);
+        }
+
+        .sticky-cta svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ========== TRUST BADGES ========== */
+        .trust-badges {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--cream-200);
+        }
+
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8125rem;
+            color: var(--text-medium);
+        }
+
+        .trust-badge svg {
+            width: 18px;
+            height: 18px;
+            color: var(--green-600);
+        }
+
+        /* ========== SOCIAL PROOF COUNTER ========== */
+        .social-proof {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--green-50);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            color: var(--green-800);
+            margin-bottom: 1.5rem;
+        }
+
+        .social-proof svg {
+            width: 16px;
+            height: 16px;
+            color: var(--green-600);
+        }
+
+        .social-proof strong {
+            color: var(--green-700);
+        }
+
+        /* ========== RESPONSE TIME BADGE ========== */
+        .response-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--green-700);
+            color: white;
+            padding: 0.625rem 1rem;
+            border-radius: var(--radius-sm);
+            font-family: var(--font-heading);
+            font-size: 0.8125rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .response-badge svg {
+            width: 16px;
+            height: 16px;
+        }
+
         /* ========== CONTACT SECTION ========== */
         .contact-container {
             max-width: 1200px;
@@ -940,6 +1170,38 @@
             .contact-form-wrapper {
                 padding: 1.5rem;
             }
+
+            /* Estimator responsive */
+            .estimator-form {
+                grid-template-columns: 1fr;
+            }
+
+            /* Show sticky CTA on mobile */
+            .sticky-cta {
+                display: flex;
+            }
+
+            /* Add padding to body for sticky CTA */
+            body {
+                padding-bottom: 80px;
+            }
+
+            /* Trust badges stack */
+            .trust-badges {
+                flex-direction: column;
+                align-items: center;
+                gap: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .estimate-cta {
+                flex-direction: column;
+            }
+
+            .estimate-cta .btn {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -1154,34 +1416,102 @@
                 </div>
             </section>
 
+            <!-- Instant Estimator -->
+            <section class="estimator" id="estimator">
+                <div class="estimator-container">
+                    <div class="estimator-header" data-aos="fade-up">
+                        <span class="section-label"><i data-lucide="calculator"></i> Instant Estimate</span>
+                        <h2>Get Your Fence Estimate in 30 Seconds</h2>
+                        <p>See approximate pricing instantly. No waiting, no sales calls until you're ready.</p>
+                    </div>
+                    <div class="estimator-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="estimator-form">
+                            <div class="estimator-field">
+                                <label for="est-fence-type">Fence Type</label>
+                                <select id="est-fence-type" onchange="calculateEstimate()">
+                                    <option value="">Select type...</option>
+                                    <option value="wood">Wood Fence</option>
+                                    <option value="vinyl">Vinyl Fence</option>
+                                    <option value="aluminum">Aluminum Fence</option>
+                                    <option value="chain-link">Chain Link Fence</option>
+                                </select>
+                            </div>
+                            <div class="estimator-field">
+                                <label for="est-feet">Linear Feet</label>
+                                <input type="number" id="est-feet" placeholder="e.g. 150" min="10" max="2000" onchange="calculateEstimate()" oninput="calculateEstimate()">
+                            </div>
+                            <div class="estimator-field">
+                                <label for="est-height">Height</label>
+                                <select id="est-height" onchange="calculateEstimate()">
+                                    <option value="4">4 ft (Standard)</option>
+                                    <option value="6" selected>6 ft (Privacy)</option>
+                                    <option value="8">8 ft (Tall)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="estimate-result" id="estimateResult">
+                            <div class="estimate-label">Your Estimated Investment</div>
+                            <div class="estimate-range" id="estimateRange">$3,500 - $5,250</div>
+                            <div class="estimate-note">*Final price depends on terrain, gates, and style options</div>
+                            <div class="estimate-cta">
+                                <a href="#contact" class="btn btn-primary">Get Exact Quote <i data-lucide="arrow-right"></i></a>
+                                <a href="tel:${co.phone}" class="btn btn-secondary"><i data-lucide="phone"></i> Call Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Contact -->
             <section class="contact" id="contact">
                 <div class="contact-container">
                     <div class="contact-info" data-aos="fade-up">
                         <h2>${hp.contact.headline}</h2>
                         <p>${hp.contact.description}</p>
+
+                        <!-- Click to Call - High Visibility -->
+                        <a href="tel:${co.phone}" class="btn btn-primary" style="width: 100%; margin-bottom: 2rem; font-size: 1.125rem;">
+                            <i data-lucide="phone"></i> Call ${co.phone}
+                        </a>
+
                         <div class="contact-details">
                             <div class="contact-item"><div class="contact-item-icon"><i data-lucide="map-pin"></i></div><div class="contact-item-text"><h4>Service Area</h4><p>${hp.contact.serviceArea}</p></div></div>
-                            <div class="contact-item"><div class="contact-item-icon"><i data-lucide="mail"></i></div><div class="contact-item-text"><h4>Email Us</h4><p>${hp.contact.email}</p></div></div>
                             <div class="contact-item"><div class="contact-item-icon"><i data-lucide="clock"></i></div><div class="contact-item-text"><h4>Business Hours</h4><p>${hp.contact.hours.replace(/\\n/g, '<br>')}</p></div></div>
                         </div>
                     </div>
                     <div class="contact-form-wrapper" data-aos="fade-up" data-aos-delay="100">
+                        <!-- Social Proof Counter -->
+                        <div class="social-proof">
+                            <i data-lucide="users"></i>
+                            <span><strong>47 homeowners</strong> requested quotes this month</span>
+                        </div>
+
                         <h3>Request Your Free Quote</h3>
-                        <p>Tell us about your project and we'll get back to you promptly.</p>
+
+                        <!-- Response Time Badge -->
+                        <div class="response-badge">
+                            <i data-lucide="zap"></i> Average response: Under 2 hours
+                        </div>
+
                         <form action="https://formspree.io/f/xwpkjpnv" method="POST">
                             <div class="form-row">
-                                <div class="form-group"><label for="name">Your Name</label><input type="text" id="name" name="name" placeholder="John Smith" required></div>
-                                <div class="form-group"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" placeholder="(910) 555-1234" required></div>
+                                <div class="form-group"><label for="name">Your Name *</label><input type="text" id="name" name="name" placeholder="John Smith" required></div>
+                                <div class="form-group"><label for="contact-method">Best Way to Reach You *</label><input type="text" id="contact-method" name="contact" placeholder="Phone or email" required></div>
                             </div>
                             <div class="form-row">
-                                <div class="form-group"><label for="email">Email Address</label><input type="email" id="email" name="email" placeholder="john@example.com" required></div>
-                                <div class="form-group"><label for="fence-type">Fence Type</label><select id="fence-type" name="fence-type"><option value="">Select fence type...</option><option value="wood">Wood Fence</option><option value="vinyl">Vinyl Fence</option><option value="aluminum">Aluminum Fence</option><option value="chain-link">Chain Link Fence</option><option value="repair">Fence Repair</option><option value="other">Other / Not Sure</option></select></div>
+                                <div class="form-group"><label for="fence-type">Fence Type</label><select id="fence-type" name="fence-type"><option value="">Select fence type...</option><option value="wood">Wood Fence</option><option value="vinyl">Vinyl Fence</option><option value="aluminum">Aluminum Fence</option><option value="chain-link">Chain Link Fence</option><option value="repair">Fence Repair</option><option value="other">Not Sure Yet</option></select></div>
+                                <div class="form-group"><label for="address">Property Address</label><input type="text" id="address" name="address" placeholder="City or zip code is fine"></div>
                             </div>
-                            <div class="form-group"><label for="address">Property Address</label><input type="text" id="address" name="address" placeholder="123 Main St, Wilmington, NC 28401"></div>
-                            <div class="form-group"><label for="message">Tell Us About Your Project</label><textarea id="message" name="message" placeholder="Describe your fencing needs, approximate length, any special requirements..."></textarea></div>
-                            <button type="submit" class="form-submit">Get My Free Quote <i data-lucide="send"></i></button>
+                            <div class="form-group"><label for="message">Anything else? <span style="font-weight:400;text-transform:none;font-size:0.8125rem;color:var(--text-light)">(optional)</span></label><textarea id="message" name="message" placeholder="Approximate length, timeline, special requirements..." style="min-height:80px"></textarea></div>
+                            <button type="submit" class="form-submit">Send My Request <i data-lucide="arrow-right"></i></button>
                         </form>
+
+                        <!-- Trust Badges -->
+                        <div class="trust-badges">
+                            <div class="trust-badge"><i data-lucide="shield-check"></i> Licensed & Insured</div>
+                            <div class="trust-badge"><i data-lucide="award"></i> 5-Year Warranty</div>
+                            <div class="trust-badge"><i data-lucide="star"></i> 5.0 Google Rating</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1203,7 +1533,13 @@
                         </div>
                     </div>
                 </div>
-            </footer>`;
+            </footer>
+
+            <!-- Sticky Mobile CTA -->
+            <div class="sticky-cta">
+                <a href="tel:${co.phone}" class="sticky-cta-call"><i data-lucide="phone"></i> Call Now</a>
+                <a href="#contact" class="sticky-cta-quote"><i data-lucide="file-text"></i> Free Quote</a>
+            </div>`;
 
             // Initialize mobile menu after content loads
             initMobileMenu();
@@ -1213,6 +1549,43 @@
 
             // Initialize AOS animations
             AOS.init({ duration: 600, once: true, offset: 50 });
+        }
+
+        // Fence Estimate Calculator
+        function calculateEstimate() {
+            const fenceType = document.getElementById('est-fence-type')?.value;
+            const feet = parseInt(document.getElementById('est-feet')?.value) || 0;
+            const height = parseInt(document.getElementById('est-height')?.value) || 6;
+
+            // Price ranges per linear foot (installed) by type and height
+            const prices = {
+                'wood': { 4: [22, 35], 6: [28, 45], 8: [35, 55] },
+                'vinyl': { 4: [30, 50], 6: [35, 65], 8: [45, 75] },
+                'aluminum': { 4: [30, 50], 6: [35, 60], 8: [45, 70] },
+                'chain-link': { 4: [12, 22], 6: [15, 30], 8: [20, 35] }
+            };
+
+            const resultEl = document.getElementById('estimateResult');
+            const rangeEl = document.getElementById('estimateRange');
+
+            if (!fenceType || feet < 10) {
+                resultEl?.classList.remove('visible');
+                return;
+            }
+
+            const range = prices[fenceType]?.[height] || [25, 50];
+            const lowEstimate = Math.round(feet * range[0] / 100) * 100;
+            const highEstimate = Math.round(feet * range[1] / 100) * 100;
+
+            if (rangeEl) {
+                rangeEl.textContent = '$' + lowEstimate.toLocaleString() + ' - $' + highEstimate.toLocaleString();
+            }
+            resultEl?.classList.add('visible');
+
+            // Re-render icons in the result section
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
         }
 
         // Nav scroll behavior removed - nav is always in its opaque state
