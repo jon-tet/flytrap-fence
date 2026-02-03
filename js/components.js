@@ -41,6 +41,7 @@ async function renderNav(containerId = 'site-nav') {
                 <li><a href="/#gallery">Our Work</a></li>
                 <li><a href="/#reviews">Reviews</a></li>
                 <li><a href="/about.html">About</a></li>
+                <li><a href="/fence-estimate.html">Pricing</a></li>
                 <li><a href="/#contact" class="nav-cta">Get a Free Quote</a></li>
             </ul>
             <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -57,6 +58,7 @@ async function renderNav(containerId = 'site-nav') {
         <a href="/#gallery">Our Work</a>
         <a href="/#reviews">Reviews</a>
         <a href="/about.html">About</a>
+        <a href="/fence-estimate.html">Pricing Calculator</a>
         <a href="/#contact">Get a Free Quote</a>
     </div>`;
 }
@@ -96,9 +98,9 @@ async function renderFooter(containerId = 'site-footer') {
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
+                        <li><a href="/fence-estimate.html">Pricing Calculator</a></li>
                         <li><a href="/#gallery">Our Work</a></li>
                         <li><a href="/#reviews">Reviews</a></li>
-                        <li><a href="/#contact">Get a Quote</a></li>
                         <li><a href="/about.html">About Joe</a></li>
                     </ul>
                 </div>

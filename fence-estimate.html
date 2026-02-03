@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fence Cost Calculator Wilmington NC | Free Instant Estimate | Flytrap Fence</title>
+    <meta name="description" content="Get an instant fence cost estimate for your Wilmington NC property. Calculate wood, vinyl, aluminum & chain link fence prices. Free quotes, no obligation. See pricing now!">
+    <link rel="canonical" href="https://flytrapfence.com/fence-estimate.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fence Cost Calculator Wilmington NC | Flytrap Fence">
+    <meta property="og:description" content="Calculate your fence installation cost instantly. Wood, vinyl, aluminum & chain link options. Serving Wilmington, Leland & Hampstead NC.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://flytrapfence.com/fence-estimate.html">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="/css/global.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Global Components -->
+    <script src="/js/components.js"></script>
+
+    <style>
+        /* ========== HERO ========== */
+        .estimate-hero {
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(180deg, var(--cream-100) 0%, var(--green-50) 100%);
+        }
+
+        .estimate-hero-container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .estimate-hero h1 {
+            color: var(--green-900);
+            margin-bottom: 1rem;
+        }
+
+        .estimate-hero .lead {
+            font-size: 1.25rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .trust-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--green-700);
+            font-weight: 600;
+        }
+
+        .trust-item i {
+            width: 18px;
+            height: 18px;
+            color: var(--green-600);
+        }
+
+        /* ========== CALCULATOR SECTION ========== */
+        .calculator-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
+        }
+
+        .calculator-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .calculator-card {
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .calculator-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .calculator-field label {
+            display: block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--green-800);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+
+        .calculator-field select,
+        .calculator-field input {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid var(--cream-300);
+            border-radius: var(--radius-sm);
+            font-size: 1.125rem;
+            font-family: var(--font-body);
+            transition: border-color 0.2s ease;
+        }
+
+        .calculator-field select:focus,
+        .calculator-field input:focus {
+            outline: none;
+            border-color: var(--green-600);
+        }
+
+        .estimate-result {
+            background: var(--cream-100);
+            border-radius: var(--radius-sm);
+            padding: 2rem;
+            text-align: center;
+            border: 2px dashed var(--cream-300);
+            transition: all 0.3s ease;
+        }
+
+        .estimate-result.active {
+            background: var(--green-50);
+            border-color: var(--green-300);
+            border-style: solid;
+        }
+
+        .estimate-result-label {
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        .estimate-result-value {
+            font-family: var(--font-heading);
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--green-800);
+            line-height: 1;
+        }
+
+        .estimate-result-note {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-top: 0.75rem;
+        }
+
+        .estimate-cta {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .estimate-cta p {
+            color: var(--text-medium);
+            margin-bottom: 1rem;
+        }
+
+        /* ========== PRICING INFO ========== */
+        .pricing-info {
+            padding: 5rem 2rem;
+            background: var(--cream-50);
+        }
+
+        .pricing-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .pricing-header h2 {
+            color: var(--green-900);
+            margin-bottom: 1rem;
+        }
+
+        .pricing-header p {
+            color: var(--text-medium);
+            font-size: 1.125rem;
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: var(--green-300);
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .pricing-card-icon {
+            width: 56px;
+            height: 56px;
+            margin: 0 auto 1rem;
+            background: var(--green-50);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pricing-card-icon i {
+            width: 28px;
+            height: 28px;
+            color: var(--green-700);
+        }
+
+        .pricing-card h3 {
+            color: var(--green-900);
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price-range {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--green-700);
+            margin-bottom: 0.5rem;
+        }
+
+        .pricing-card .price-unit {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+        }
+
+        .pricing-card ul {
+            text-align: left;
+            font-size: 0.9rem;
+            color: var(--text-medium);
+        }
+
+        .pricing-card li {
+            padding: 0.35rem 0;
+            padding-left: 1.25rem;
+            position: relative;
+        }
+
+        .pricing-card li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            background: var(--green-400);
+            border-radius: 50%;
+        }
+
+        /* ========== FACTORS SECTION ========== */
+        .factors {
+            padding: 5rem 2rem;
+            background: white;
+        }
+
+        .factors-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .factors-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .factors-header h2 {
+            color: var(--green-900);
+            margin-bottom: 1rem;
+        }
+
+        .factors-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .factor-card {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .factor-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 1rem;
+            background: var(--cream-100);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .factor-icon i {
+            width: 28px;
+            height: 28px;
+            color: var(--green-700);
+        }
+
+        .factor-card h3 {
+            color: var(--green-900);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .factor-card p {
+            color: var(--text-medium);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* ========== FAQ SECTION ========== */
+        .faq {
+            padding: 5rem 2rem;
+            background: var(--cream-100);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .faq-header h2 {
+            color: var(--green-900);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-item {
+            background: white;
+            border-radius: var(--radius-sm);
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            background: white;
+            border: none;
+            text-align: left;
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--green-900);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background 0.2s ease;
+        }
+
+        .faq-question:hover {
+            background: var(--cream-50);
+        }
+
+        .faq-question i {
+            width: 20px;
+            height: 20px;
+            color: var(--green-600);
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.open .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+        }
+
+        .faq-item.open .faq-answer {
+            max-height: 500px;
+        }
+
+        /* ========== CONTACT FORM SECTION ========== */
+        .contact-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--green-800) 0%, var(--green-900) 100%);
+        }
+
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .contact-header h2 {
+            color: white;
+            margin-bottom: 0.75rem;
+        }
+
+        .contact-header p {
+            color: var(--green-200);
+            font-size: 1.1rem;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: var(--radius-sm);
+            padding: 2.5rem;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .contact-form label {
+            display: block;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--green-800);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.9rem 1rem;
+            border: 2px solid var(--cream-300);
+            border-radius: var(--radius-sm);
+            font-size: 1rem;
+            font-family: var(--font-body);
+            transition: border-color 0.2s ease;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--green-600);
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .contact-form button {
+            margin-top: 0.5rem;
+        }
+
+        .form-note {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-top: 1rem;
+        }
+
+        .form-note i {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+            margin-right: 0.25rem;
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 1024px) {
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .factors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .estimate-hero {
+                padding: 6rem 1.5rem 3rem;
+            }
+
+            .estimate-hero h1 {
+                font-size: 2rem;
+            }
+
+            .trust-row {
+                flex-direction: column;
+                gap: 0.75rem;
+                align-items: center;
+            }
+
+            .calculator-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .calculator-card {
+                padding: 1.5rem;
+            }
+
+            .calculator-form {
+                grid-template-columns: 1fr;
+            }
+
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                max-width: 350px;
+                margin: 0 auto;
+            }
+
+            .factors-grid {
+                grid-template-columns: 1fr;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <div id="site-nav"></div>
+
+    <!-- Hero -->
+    <section class="estimate-hero">
+        <div class="estimate-hero-container">
+            <h1>Fence Cost Calculator for <span class="accent">Wilmington NC</span></h1>
+            <p class="lead">Get an instant ballpark estimate for your fence project. No phone calls, no pressure—just honest pricing you can plan around.</p>
+            <div class="trust-row">
+                <span class="trust-item"><i data-lucide="shield-check"></i> Licensed & Insured</span>
+                <span class="trust-item"><i data-lucide="award"></i> 5-Year Warranty</span>
+                <span class="trust-item"><i data-lucide="clock"></i> Same-Day Quotes</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator -->
+    <section class="calculator-section" id="calculator">
+        <div class="calculator-container">
+            <div class="calculator-card">
+                <div class="calculator-form">
+                    <div class="calculator-field">
+                        <label for="fence-type">Fence Type</label>
+                        <select id="fence-type" onchange="calculateEstimate()">
+                            <option value="">Select type...</option>
+                            <option value="wood">Wood Fence</option>
+                            <option value="vinyl">Vinyl Fence</option>
+                            <option value="aluminum">Aluminum Fence</option>
+                            <option value="chain-link">Chain Link Fence</option>
+                        </select>
+                    </div>
+                    <div class="calculator-field">
+                        <label for="linear-feet">Linear Feet</label>
+                        <input type="number" id="linear-feet" placeholder="e.g. 150" min="10" max="2000" onchange="calculateEstimate()" oninput="calculateEstimate()">
+                    </div>
+                    <div class="calculator-field">
+                        <label for="fence-height">Height</label>
+                        <select id="fence-height" onchange="calculateEstimate()">
+                            <option value="4">4 ft (Standard)</option>
+                            <option value="6" selected>6 ft (Privacy)</option>
+                            <option value="8">8 ft (Tall)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="estimate-result" id="estimate-result">
+                    <div class="estimate-result-label">Estimated Cost</div>
+                    <div class="estimate-result-value" id="estimate-value">$0 - $0</div>
+                    <div class="estimate-result-note">Select fence type and enter linear feet for estimate</div>
+                </div>
+
+                <div class="estimate-cta">
+                    <p>Ready for an exact quote? We'll measure your property for free.</p>
+                    <a href="#contact-form" class="btn btn-primary">
+                        Get Your Free Quote <i data-lucide="arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Info -->
+    <section class="pricing-info">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2>Fence Pricing in Wilmington NC</h2>
+                <p>Here's what fence installation typically costs in the Cape Fear region. Prices include materials, labor, and our 5-year warranty.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-card-icon"><i data-lucide="trees"></i></div>
+                    <h3>Wood Fence</h3>
+                    <div class="price-range">$25 - $45</div>
+                    <div class="price-unit">per linear foot</div>
+                    <ul>
+                        <li>Pressure-treated pine</li>
+                        <li>Privacy & picket styles</li>
+                        <li>Natural, classic look</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-icon"><i data-lucide="sparkles"></i></div>
+                    <h3>Vinyl Fence</h3>
+                    <div class="price-range">$30 - $55</div>
+                    <div class="price-unit">per linear foot</div>
+                    <ul>
+                        <li>Zero maintenance</li>
+                        <li>Won't rot or fade</li>
+                        <li>Lifetime warranty available</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-icon"><i data-lucide="gem"></i></div>
+                    <h3>Aluminum Fence</h3>
+                    <div class="price-range">$35 - $60</div>
+                    <div class="price-unit">per linear foot</div>
+                    <ul>
+                        <li>Rust-free forever</li>
+                        <li>Pool code compliant</li>
+                        <li>Elegant, ornamental style</li>
+                    </ul>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-icon"><i data-lucide="link"></i></div>
+                    <h3>Chain Link</h3>
+                    <div class="price-range">$15 - $30</div>
+                    <div class="price-unit">per linear foot</div>
+                    <ul>
+                        <li>Most affordable option</li>
+                        <li>Galvanized or vinyl-coated</li>
+                        <li>Great for large areas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Factors -->
+    <section class="factors">
+        <div class="factors-container">
+            <div class="factors-header">
+                <h2>What Affects Your Fence Cost?</h2>
+            </div>
+            <div class="factors-grid">
+                <div class="factor-card">
+                    <div class="factor-icon"><i data-lucide="ruler"></i></div>
+                    <h3>Fence Length & Height</h3>
+                    <p>More linear feet = more materials and labor. Taller fences (8 ft) cost more than standard 6 ft privacy fences.</p>
+                </div>
+                <div class="factor-card">
+                    <div class="factor-icon"><i data-lucide="mountain"></i></div>
+                    <h3>Terrain & Slopes</h3>
+                    <p>Flat yards are easier. Slopes, rocks, or roots may require extra work to ensure your fence is level and secure.</p>
+                </div>
+                <div class="factor-card">
+                    <div class="factor-icon"><i data-lucide="door-open"></i></div>
+                    <h3>Gates & Access</h3>
+                    <p>Single walk gates, double drive gates, and custom hardware add to the total. We'll help you plan the right access points.</p>
+                </div>
+                <div class="factor-card">
+                    <div class="factor-icon"><i data-lucide="hammer"></i></div>
+                    <h3>Removal of Old Fence</h3>
+                    <p>Need an old fence torn out? We handle demolition and disposal for an additional fee. Just ask for a removal quote.</p>
+                </div>
+                <div class="factor-card">
+                    <div class="factor-icon"><i data-lucide="paint-bucket"></i></div>
+                    <h3>Style & Upgrades</h3>
+                    <p>Board-on-board, cap & trim, decorative post caps—premium styles and finishes look great but cost a bit more.</p>
+                </div>
+                <div class="factor-card">
+                    <div class="factor-icon"><i data-lucide="map-pin"></i></div>
+                    <h3>Property Location</h3>
+                    <p>Most of Wilmington, Leland, and Hampstead are in our core service area. Further locations may have a travel fee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2>Fence Pricing FAQs</h2>
+            </div>
+
+            <div class="faq-item open">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How accurate is the online estimate?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Our calculator gives you a realistic ballpark based on current Wilmington-area pricing. Your actual quote may vary based on terrain, gates, old fence removal, and style upgrades. For an exact price, we'll come measure your property for free—no obligation.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Do you offer financing?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Yes! We offer flexible financing options to help make your fence project affordable. Ask about our payment plans when you request your free quote. Most homeowners qualify for 0% interest for 12 months.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    How long does fence installation take?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Most residential fences are installed in 1-2 days. Larger properties or complex terrain may take 3-4 days. We'll give you a timeline with your quote so you know exactly what to expect.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    What's included in your fence installation price?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Everything. Our quotes include all materials, labor, concrete for posts, cleanup, and our 5-year craftsmanship warranty. No hidden fees, no surprise charges. The price we quote is the price you pay.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Do I need a permit for a fence in Wilmington?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        In most cases, yes. The City of Wilmington and New Hanover County require permits for fences over 4 feet tall. Don't worry—we handle the permit process for you as part of our service. We know the local codes inside and out.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Which fence type is best for privacy?
+                    <i data-lucide="chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        For full privacy, we recommend a 6-foot wood fence (board-on-board style) or a solid vinyl privacy fence. Both block views completely. Wood offers a classic look and lower upfront cost, while vinyl requires zero maintenance. We'll help you choose based on your budget and goals.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="contact-form">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>Get Your Free, No-Obligation Quote</h2>
+                <p>Tell us about your project and we'll get back to you within 2 hours.</p>
+            </div>
+            <div class="contact-card">
+                <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <div class="form-row">
+                        <div>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(910) 555-1234">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label for="project-type">Fence Type of Interest</label>
+                        <select id="project-type" name="fence_type">
+                            <option value="">Not sure yet</option>
+                            <option value="wood">Wood Fence</option>
+                            <option value="vinyl">Vinyl Fence</option>
+                            <option value="aluminum">Aluminum Fence</option>
+                            <option value="chain-link">Chain Link Fence</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Project Details (optional)</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your project—approximate fence length, any special requirements, timeline, etc."></textarea>
+                    </div>
+                    <input type="hidden" name="_subject" value="New Quote Request from Fence Estimate Page">
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Request My Free Quote <i data-lucide="send"></i>
+                    </button>
+                </form>
+                <p class="form-note">
+                    <i data-lucide="lock"></i> Your information is secure and never shared.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="site-footer"></div>
+
+    <script>
+        // Initialize global components
+        FlytrapComponents.initGlobalComponents();
+
+        // Initialize Lucide icons for page-specific elements
+        lucide.createIcons();
+
+        // Fence Estimate Calculator
+        function calculateEstimate() {
+            const fenceType = document.getElementById('fence-type')?.value;
+            const feet = parseInt(document.getElementById('linear-feet')?.value) || 0;
+            const height = parseInt(document.getElementById('fence-height')?.value) || 6;
+
+            // Price ranges per linear foot (installed) by type and height
+            const prices = {
+                'wood':       { 4: [20, 32], 6: [25, 40], 8: [32, 50] },
+                'vinyl':      { 4: [25, 40], 6: [30, 50], 8: [38, 60] },
+                'aluminum':   { 4: [28, 45], 6: [35, 55], 8: [42, 65] },
+                'chain-link': { 4: [12, 20], 6: [15, 28], 8: [20, 35] }
+            };
+
+            const resultDiv = document.getElementById('estimate-result');
+            const valueDiv = document.getElementById('estimate-value');
+
+            if (!fenceType || feet < 10) {
+                resultDiv.classList.remove('active');
+                valueDiv.textContent = '$0 - $0';
+                return;
+            }
+
+            const [lowPerFoot, highPerFoot] = prices[fenceType][height];
+            const lowTotal = Math.round(lowPerFoot * feet / 100) * 100;
+            const highTotal = Math.round(highPerFoot * feet / 100) * 100;
+
+            resultDiv.classList.add('active');
+            valueDiv.textContent = `$${lowTotal.toLocaleString()} - $${highTotal.toLocaleString()}`;
+        }
+
+        // FAQ Toggle
+        function toggleFaq(button) {
+            const item = button.closest('.faq-item');
+            const wasOpen = item.classList.contains('open');
+
+            // Close all other items
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+
+            // Toggle this item
+            if (!wasOpen) {
+                item.classList.add('open');
+            }
+
+            // Re-initialize icons for the chevron
+            lucide.createIcons();
+        }
+    </script>
+</body>
+</html>
